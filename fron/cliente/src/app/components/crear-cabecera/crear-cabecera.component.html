@@ -1,0 +1,158 @@
+<span class="titulo" class="d-grid gap-2 col-4  mx-auto " >{{ title | uppercase}}</span>
+<form [formGroup]="cabeceraForm" class="container bg-light bc row row-cols-1 row-cols-lg-4 g-1 g-lg-2" style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;" (ngSubmit)="agregarCabecera()">
+    <div class="form-group">
+        <input type="text" formControlName="ab" (ngSubmit)="agregarCabecera()"
+        class="form-control" placeholder="Consejo de Administración">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('ab')?.hasError('required') && cabeceraForm.get('ab')?.touched">
+            <span>El nombre de este producto<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Consejo de Administración</p>
+    <div class="form-group">
+        <input type="text" formControlName="bb"
+        class="form-control" placeholder="BAI">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('bb')?.hasError('required') && cabeceraForm.get('bb')?.touched">
+            <span>La categoria<b> es obligatoria</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CEO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="cb"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('cb')?.hasError('required') && cabeceraForm.get('cb')?.touched">
+            <span>La ubicación<b> es obligatoria</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="db"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('db')?.hasError('required') && cabeceraForm.get('db')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="uno"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('uno')?.hasError('required') && cabeceraForm.get('uno')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="dos"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('dos')?.hasError('required') && cabeceraForm.get('dos')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="tres"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('tres')?.hasError('required') && cabeceraForm.get('tres')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="cuatro"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('cuatro')?.hasError('required') && cabeceraForm.get('cuatro')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="cinco"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('cinco')?.hasError('required') && cabeceraForm.get('cinco')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="seis"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('seis')?.hasError('required') && cabeceraForm.get('seis')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="siete"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('siete')?.hasError('required') && cabeceraForm.get('siete')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+       
+        </div>
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="ocho"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('ocho')?.hasError('required') && cabeceraForm.get('ocho')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+        
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="nueve"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('nueve')?.hasError('required') && cabeceraForm.get('nueve')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+        
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="dies"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('dies')?.hasError('required') && cabeceraForm.get('dies')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+        
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="once"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('once')?.hasError('required') && cabeceraForm.get('once')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+        
+    </div>
+    <p id="formulario">Director General Financiero(CFO)</p>
+    <div class="form-group">
+        <input type="text" formControlName="doce"
+        class="form-control" placeholder="R-A-C-I">
+        <div class="validacion"
+            *ngIf="cabeceraForm.get('doce')?.hasError('required') && cabeceraForm.get('doce')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div>
+        
+    </div>
+    
+    <div>
+        <button type="button" class="btn btn-secondary" routerLink="/listar-productos">Volver</button>
+        <button type="button" class="btn btn-success" type="submit" [disabled]="cabeceraForm.invalid" >Aceptar</button>
+    </div>
+</form>

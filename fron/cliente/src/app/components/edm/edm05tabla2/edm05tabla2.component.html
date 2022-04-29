@@ -1,0 +1,110 @@
+<div class="table-responsive">
+  <table *ngIf="edm05titulolistar.length > 0" >
+      <thead   >
+        <tr id="edm05">
+          <th colspan="29" class="matriz">Matriz RACI EDM05</th>
+        </tr>
+      </thead>
+
+      <!-- -----------------------cabecera------------------------ -->
+
+      <tbody >
+       
+        <tr *ngFor="let edm05titulovar of edm05titulolistar">
+          <th ><p class="gob">Practicas de Gobierno</p></th>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo1}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo2}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo3}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo4}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo5}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo6}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo7}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo8}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo9}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo10}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo11}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo12}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo13}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo14}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo15}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo16}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo17}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo18}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo19}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo20}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo21}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo22}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo23}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo24}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo25}}</td>
+          <td class="verticalText">{{ edm05titulovar.edm05titulo26}}</td>
+        
+          <td>
+            <i [routerLink]="['/editaredm05titulos', edm05titulovar._id]"  class="fa-solid fa-pen-to-square"></i>
+              <i (click)="eliminarEdm05titulo(edm05titulovar._id)" class="fa-solid fa-trash text-danger"></i>
+          </td>
+        </tr>
+      </tbody>
+
+
+      <tbody>
+        <tr *ngFor="let edm05casillasvar of edm05casillaslistar">
+         
+        
+          <td class="segundo">{{ edm05casillasvar.edm05casilla1}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla2}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla3}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla4}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla5}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla6}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla7}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla8}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla9}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla10}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla11}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla12}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla13}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla14}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla15}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla16}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla17}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla18}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla19}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla20}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla21}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla22}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla23}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla24}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla25}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla26}}</td>
+            <td class="segundo">{{ edm05casillasvar.edm05casilla27}}</td>
+            <td>
+              <i [routerLink]="['/editaredm05casillas',edm05casillasvar._id]"  class="fa-solid fa-pen-to-square"></i>
+              <i (click)="eliminarEdm05casilla(edm05casillasvar._id)" class="fa-solid fa-trash text-danger"></i>
+          </td>
+        </tr>
+      </tbody>
+ 
+    </table>
+    <h5 *ngIf="edm05casillaslistar.length == 0" >No hay Matriz para mostrar</h5>
+</div>
+<br>
+<br>
+
+<button routerLink="/crearedm05casillas" class="btn btn-success">Nueva Casilla</button>
+
+<br>
+<br>
+<nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="/home">EDM05</a></li>
+      <li class="page-item"><a class="page-link" href="edm05tabla1">1</a></li>
+      <li class="page-item"><a class="page-link" href="edm05tabla2">2</a></li>
+      <li class="page-item"><a class="page-link" href="edm05tabla3">3</a></li>
+      <li class="page-item"><a class="page-link" href="edm05tabla4">4</a></li>
+      <li class="page-item"><a class="page-link" href="edm05tabla5">5</a></li>
+      <li class="page-item"><a class="page-link" href="edm05tabla3">Next</a></li>
+      
+    </ul>
+  </nav><br>
+

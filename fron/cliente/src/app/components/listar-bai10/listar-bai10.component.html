@@ -1,0 +1,90 @@
+<div class="table-responsive">
+    
+    <!-- <button routerLink="/crear-cabecerab10" class="btn btn-danger">Nuevo cabecera</button> -->
+    <table *ngIf="listBai10.length > 0" class="table table-striped" class="container">
+        <thead>
+          <tr id="Cabecera_1">
+            <th colspan="50" class="matriz">  Matriz RACI BAI05 </th>
+          </tr>
+          <tr *ngFor="let cabecerab10 of listCabecerab10">
+            <th class="align">Práctica Clave hel Gobierno</th>
+            <th class="verticalText" >{{cabecerab10.ll1}}</th>
+            <th class="verticalText">{{cabecerab10.ll2}}</th>
+            <th class="verticalText">{{cabecerab10.ll3}}</th>
+            <th class="verticalText">{{cabecerab10.ll4}}</th>
+            <th class="verticalText">{{cabecerab10.ll5}}</th>
+            <th class="verticalText">{{cabecerab10.ll6}}</th>
+            <th class="verticalText">{{cabecerab10.ll7}}</th>
+            <th class="verticalText">{{cabecerab10.ll8}}</th>
+            <th class="verticalText">{{cabecerab10.ll9}}</th>
+            <th class="verticalText">{{cabecerab10.ll10}}</th>
+            <th class="verticalText">{{cabecerab10.ll11}}</th>
+            <th class="verticalText">{{cabecerab10.ll12}}</th>
+            <th class="verticalText">{{cabecerab10.ll13}}</th>
+            <th class="verticalText">{{cabecerab10.ll14}}</th>
+            <th class="verticalText">{{cabecerab10.ll15}}</th>
+            <th class="verticalText">{{cabecerab10.ll16}}</th>
+            <th class="verticalText">{{cabecerab10.ll17}}</th>
+            <th class="verticalText">{{cabecerab10.ll18}}</th>
+            <th class="verticalText">{{cabecerab10.ll19}}</th>
+            <th class="verticalText">{{cabecerab10.ll20}}</th>
+            <th class="verticalText">{{cabecerab10.ll21}}</th>
+            <th class="verticalText">{{cabecerab10.ll22}}</th>
+            <th class="verticalText">{{cabecerab10.ll23}}</th>
+            <th class="verticalText">{{cabecerab10.ll24}}</th>
+            <th class="verticalText">{{cabecerab10.ll25}}</th>
+            <th class="verticalText">{{cabecerab10.ll26}}</th>
+            
+           
+            
+            <td>
+    
+              <i  [routerLink]="['/editar-cabecerab10', cabecerab10._id]" class="fa-solid fa-pen-to-square ed" ></i>
+              <!-- <i (click)="eliminarCabecerab10(cabecerab10._id)" class="fa-solid fa-trash el" ></i> -->
+        </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let bai10 of listBai10">
+            <th class="sel">{{bai10.z1}}</th>
+            <td>{{bai10.z2}}</td>
+            <td>{{bai10.z3}}</td>
+            <td>{{bai10.z4}}</td>
+            <td>{{bai10.z5}}</td>
+            <td>{{bai10.z6}}</td>
+            <td>{{bai10.z7}}</td>
+            <td>{{bai10.z8}}</td>
+            <td>{{bai10.z9}}</td>
+            <td>{{bai10.z10}}</td>
+            <td>{{bai10.z11}}</td>
+            <td>{{bai10.z12}}</td>
+            <td>{{bai10.z13}}</td>
+            <td>{{bai10.z14}}</td>
+            <td>{{bai10.z15}}</td>
+            <td>{{bai10.z16}}</td>
+            <td>{{bai10.z17}}</td>
+            <td>{{bai10.z18}}</td>
+            <td>{{bai10.z19}}</td>
+            <td>{{bai10.z20}}</td>
+            <td>{{bai10.z21}}</td>
+            <td>{{bai10.z22}}</td>
+            <td>{{bai10.z23}}</td>
+            <td>{{bai10.z24}}</td>
+            <td>{{bai10.z25}}</td>
+            <td>{{bai10.z26}}</td>
+            <td>{{bai10.z27}}</td>
+
+            
+            
+        <td>
+    
+              <i  [routerLink]="['/editar-bai10', bai10._id]" class="fa-solid fa-pen-to-square ed" ></i>
+              <i routerLink="listar-bai10" (click)="eliminarBai10(bai10._id)" class="fa-solid fa-trash el" ></i>
+        </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <button routerLink="/crear-bai10" class="btn btn-success" type="button">Nuevo<i class="bi bi-stack nuevo"></i></button>
+</div><br>
+

@@ -1,0 +1,117 @@
+<div class="table-responsive">
+    <table *ngIf="apo08titulolistar.length > 0" >
+        <thead   >
+          <tr id="apo08">
+            <th colspan="29" class="matriz">Matriz RACI APO08</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody >
+         
+          <tr *ngFor="let apo08titulovar of apo08titulolistar">
+            <th ><p class="gob">Practicas de Gobierno</p></th>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo1}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo2}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo3}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo4}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo5}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo6}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo7}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo8}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo9}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo10}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo11}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo12}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo13}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo14}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo15}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo16}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo17}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo18}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo19}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo20}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo21}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo22}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo23}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo24}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo25}}</td>
+            <td class="verticalText">{{ apo08titulovar.apo08titulo26}}</td>
+          
+            <td>
+              <i [routerLink]="['/editar-apo08titulo', apo08titulovar._id]"  class="fa-solid fa-pen-to-square  ed"></i><br>
+                <i (click)="eliminarApo08titulo(apo08titulovar._id)" class="fa-solid fa-trash  el"></i><br>
+            </td>
+          </tr>
+        </tbody>
+  
+  
+        <tbody>
+          <tr *ngFor="let apo08casillasvar of apo08casillalistar">
+           
+          
+            <td class="segundo">{{ apo08casillasvar.apo08casilla1}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla2}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla3}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla4}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla5}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla8}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla7}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla8}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla9}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla10}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla11}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla12}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla13}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla14}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla15}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla16}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla17}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla18}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla19}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla20}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla21}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla22}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla23}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla24}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla25}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla26}}</td>
+              <td class="segundo">{{ apo08casillasvar.apo08casilla27}}</td>
+              <td>
+                <i [routerLink]="['/editar-apo08casilla',apo08casillasvar._id]"  class="fa-solid fa-pen-to-square  ed"></i><br>
+                <i (click)="eliminarApo08casilla(apo08casillasvar._id)" class="fa-solid fa-trash  el"></i><br>
+            </td>
+          </tr>
+        </tbody>
+   
+      </table>
+      <h5 *ngIf="apo08casillalistar.length == 0" >No hay Matriz para mostrar</h5>
+  </div>
+  <br>
+  <br>
+  <div class="d-grid gap-2 col-3 mx-auto">
+    <button routerLink="/crear-apo08titulo" class="btn btn-primary">Nueva cabecera</button>
+    <button routerLink="/crear-apo08casilla"class="btn btn-primary" type="button">Nueva Raci</button>
+    
+  </div><br>
+  
+  <br>
+  <br>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="/home">APOO8</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/apo8tabla1">1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/Apo08raci">2</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/apo8tabla2">3</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/apo8tabla3">4</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/apo8tabla4">5</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/apo8tabla5">8</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      
+    </ul>
+  </nav>
+
+
+
+

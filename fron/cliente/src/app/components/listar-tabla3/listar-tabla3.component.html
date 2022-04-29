@@ -1,0 +1,87 @@
+<div class="table-responsive">
+    <table *ngIf="listTabla3.length > 0" class="table table-striped" class="container" >
+        <thead>
+          <tr id="Cabecera_1">
+            <th colspan="50" class="matriz">  Matriz RACI BAI03 </th>
+          </tr>          
+        </thead>
+        <!-- //cabecera3 -->
+        <tbody>
+          <tr *ngFor="let cabecerab03 of listCabecerasb03" class="segundoo">
+            <th class="align">Práctica Clave del Gobierno</th>
+            <th contenteditable="true" class="verticalText" >{{cabecerab03.cab1}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab2}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab3}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab4}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab5}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab6}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab7}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab8}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab9}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab10}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab11}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab12}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab13}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab14}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab15}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab16}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab17}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab18}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab19}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab20}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab21}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab22}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab23}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab24}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab25}}</th>
+            <th contenteditable="true" class="verticalText">{{cabecerab03.cab26}}</th>            
+        <td>   
+              <i  [routerLink]="['/editar-cabecerab03', cabecerab03._id]" class="fa-solid fa-pen-to-square ed" ></i>
+              <i (click)="eliminarCabecerab03(cabecerab03._id)" class="fa-solid fa-trash el" ></i>
+        </td>
+          </tr>
+
+        </tbody>
+        <!-- fincabecera3 -->
+        <tbody>
+          <tr *ngFor="let tabla3 of listTabla3" class="segundoo">
+            <th class="sel">{{ tabla3.BAI03}}</th>
+            <td>{{tabla3.tbl1}}</td>
+            <td>{{tabla3.tbl2}}</td>
+            <td>{{tabla3.tbl3}}</td>
+            <td>{{tabla3.tbl4}}</td>
+            <td>{{tabla3.tbl5}}</td>
+            <td>{{tabla3.tbl7}}</td>
+            <td>{{tabla3.tbl8}}</td>
+            <td>{{tabla3.tbl9}}</td>
+            <td>{{tabla3.tbl10}}</td>
+            <td>{{tabla3.tbl11}}</td>
+            <td>{{tabla3.tbl12}}</td>
+            <td>{{tabla3.tbl13}}</td>
+            <td>{{tabla3.tbl14}}</td>
+            <td>{{tabla3.tbl15}}</td>
+            <td>{{tabla3.tbl16}}</td>
+            <td>{{tabla3.tbl17}}</td>
+            <td>{{tabla3.tbl18}}</td>
+            <td>{{tabla3.tbl19}}</td>
+            <td>{{tabla3.tbl20}}</td>
+            <td>{{tabla3.tbl21}}</td>
+            <td>{{tabla3.tbl22}}</td>
+            <td>{{tabla3.tbl23}}</td>
+            <td>{{tabla3.tbl24}}</td>
+            <td>{{tabla3.tbl25}}</td>
+            <td>{{tabla3.tbl26}}</td>
+            <td>{{tabla3.tbl27}}</td>         
+        <td>
+              <i  [routerLink]="['/editar-tabla3', tabla3._id]" class="fa-solid fa-pen-to-square ed" ></i>
+              <i (click)="eliminarTabla3(tabla3._id)" class="fa-solid fa-trash el" ></i>
+        </td>
+        </tr>
+        </tbody>   
+      </table>
+  <div >
+    <button routerLink="/crear-tabla3" class="btn btn-success" type="button">Crear Tabla<i class="bi bi-stack nuevo"></i></button>
+   
+</div> 
+  <h5 *ngIf="listTabla3.length == 0" >No hay Matriz para mostrar</h5>
+</div><br>

@@ -1,0 +1,388 @@
+<div>
+    <span class="d-grid gap-2 col-4  mx-auto ">{{title}}</span><br><br>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-5 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;"
+    [formGroup]="fourForm" (ngSubmit)="agregarFour()" >
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group" >
+            <select type="text" formControlName="EDM4" class="form-control" placeholder="EDM4">
+                <option>EDM02.01.<br>Evaluar la optimizacion del valor</option>
+               <option>EDM02.02.<br> Orientar la optimizacion del valor</option>
+               <option>EDM02.03.<br> Supervisar la optimizacion del valor</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('EDM4')?.hasError('required') && fourForm.get('EDM4')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="da" class="form-control" placeholder="da">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('da')?.hasError('required') && fourForm.get('da')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="db" class="form-control" placeholder="db">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('db')?.hasError('required') && fourForm.get('db')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Directo General Financiero (CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dc" class="form-control" placeholder="dc">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dc')?.hasError('required') && fourForm.get('dc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director Operacio (COO)nes</p>
+        <div class="form-group">
+            <select type="text" formControlName="dd" class="form-control" placeholder="dd">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dd')?.hasError('required') && fourForm.get('dd')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">Ejecutivo de Negocios</p>
+        <div class="form-group">
+            <select type="text" formControlName="de" class="form-control" placeholder="de">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('de')?.hasError('required') && fourForm.get('de')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los Procos de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="df" class="form-control" placeholder="df">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('df')?.hasError('required') && fourForm.get('df')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">comite Ejecutivo Estrategico</p>
+        <div class="form-group">
+            <select type="text" formControlName="dg" class="form-control" placeholder="dg">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dg')?.hasError('required') && fourForm.get('dg')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite Estrategico(Desarollo Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dh" class="form-control" placeholder="dh">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dh')?.hasError('required') && fourForm.get('dh')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="di" class="form-control" placeholder="di">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('di')?.hasError('required') && fourForm.get('di')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="dj" class="form-control" placeholder="dj">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dj')?.hasError('required') && fourForm.get('dj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dk" class="form-control" placeholder="dk">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dk')?.hasError('required') && fourForm.get('dk')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de Informacion (CSO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dl" class="form-control" placeholder="dl">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dl')?.hasError('required') && fourForm.get('dl')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="dm" class="form-control" placeholder="dm">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dm')?.hasError('required') && fourForm.get('dm')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="dn" class="form-control" placeholder="dn">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dn')?.hasError('required') && fourForm.get('dn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="dnn" class="form-control" placeholder="dnn">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dnn')?.hasError('required') && fourForm.get('dnn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo(Complice)</p>
+        <div class="form-group">
+            <select type="text" formControlName="so" class="form-control" placeholder="so">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('so')?.hasError('required') && fourForm.get('so')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="dp" class="form-control" placeholder="dp">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dp')?.hasError('required') && fourForm.get('dp')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informatica Sistema (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dq" class="form-control" placeholder="dq">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dq')?.hasError('required') && fourForm.get('dq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="dr" class="form-control" placeholder="dr">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dr')?.hasError('required') && fourForm.get('dr')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Jefe de Desarollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="ds" class="form-control" placeholder="ds">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('ds')?.hasError('required') && fourForm.get('ds')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="dt" class="form-control" placeholder="dt">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dt')?.hasError('required') && fourForm.get('dt')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administracion TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="du" class="form-control" placeholder="du">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('du')?.hasError('required') && fourForm.get('du')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Gestor de Servicio</p>
+        <div class="form-group">
+            <select type="text" formControlName="dv" class="form-control" placeholder="dv">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dv')?.hasError('required') && fourForm.get('dv')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="dw" class="form-control" placeholder="dw">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dw')?.hasError('required') && fourForm.get('dw')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="dx" class="form-control" placeholder="dx">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dx')?.hasError('required') && fourForm.get('dx')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">Gestor de Privacidad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="dy" class="form-control" placeholder="dy">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="fourForm.get('dy')?.hasError('required') && fourForm.get('dy')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/listar-four" class="btn btn-danger">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-success" [disabled]="fourForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,404 @@
+
+    <span class="d-grid gap-2 col-4  mx-auto ">{{title}}</span><br><br>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-4 g-1 g-lg-2" style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;"
+    [formGroup]="apotForm" (ngSubmit)="agregarApot()" >
+        <p class="li">Practica clave de gobierno</p><br><br>
+        <div class="form-group" >
+            <select type="text" formControlName="APO1" class="form-control" placeholder="APO1">
+                <option><a href="">APO1.01.</a> <br>Definir la estructura organizativa.</option>
+               <option>APO1.02.<br> Establecer roles y responsabilidades</option>
+               <option>APO1.03.<br> Mantener los elementos catalizadores del sistema de gestión.</option>
+               <option>APO1.04.<br> Comunicar los objetivos y la dirección de gestión.</option>
+               <option>APO1.05.<br> Optimizar la ubicación de la función de TI.</option>
+               <option>APO1.06.<br> Definir la propiedad de la información (datos) y del sistema.</option>
+               <option>APO1.07.<br> Gestionar la mejora continua de los procesos.</option>
+               <option>APO1.08.<br> Mantener el cumplimiento con las políticas y procedimientos.s</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('APO1')?.hasError('required') && apotForm.get('APO1')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="ua" class="form-control" placeholder="ua">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ua')?.hasError('required') && apotForm.get('ua')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="ub" class="form-control" placeholder="ub">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ub')?.hasError('required') && apotForm.get('ub')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Directo General Financiero (CFO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="uc" class="form-control" placeholder="uc">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uc')?.hasError('required') && apotForm.get('uc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director Operacio (COO)nes</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="ud" class="form-control" placeholder="ud">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ud')?.hasError('required') && apotForm.get('ud')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">Ejecutivo de Negocios</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="ue" class="form-control" placeholder="ue">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ue')?.hasError('required') && apotForm.get('ue')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los Procos de Negocio</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="uf" class="form-control" placeholder="uf">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uf')?.hasError('required') && apotForm.get('uf')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario">comite Ejecutivo Estrategico</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="ug" class="form-control" placeholder="ug">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ug')?.hasError('required') && apotForm.get('ug')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p id="formulario">Comite Estrategico(Desarollo Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="uh" class="form-control" placeholder="uh">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uh')?.hasError('required') && apotForm.get('uh')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario">Oficina de Gestion de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="ui" class="form-control" placeholder="ui">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+              
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ui')?.hasError('required') && apotForm.get('ui')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario">Oficina de Gestion del Valor</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="uj" class="form-control" placeholder="uj">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uj')?.hasError('required') && apotForm.get('uj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Director de Riesgos (CRO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="uk" class="form-control" placeholder="uk">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+              
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uk')?.hasError('required') && apotForm.get('uk')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de Informacion (CSO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ul" class="form-control" placeholder="ul">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ul')?.hasError('required') && apotForm.get('ul')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="um" class="form-control" placeholder="um">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('um')?.hasError('required') && apotForm.get('um')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="un" class="form-control" placeholder="un">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('un')?.hasError('required') && apotForm.get('un')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="unn" class="form-control" placeholder="unn">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('unn')?.hasError('required') && apotForm.get('unn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo(Complice)</p>
+        <div class="form-group">
+            <select type="text" formControlName="uo" class="form-control" placeholder="uo">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uo')?.hasError('required') && apotForm.get('uo')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="up" class="form-control" placeholder="up">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+              
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('up')?.hasError('required') && apotForm.get('up')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informatica Sistema (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="uq" class="form-control" placeholder="uq">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uq')?.hasError('required') && apotForm.get('uq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="ur" class="form-control" placeholder="ur">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ur')?.hasError('required') && apotForm.get('ur')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Jefe de Desarollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="us" class="form-control" placeholder="us">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('us')?.hasError('required') && apotForm.get('us')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="ut" class="form-control" placeholder="ut">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ut')?.hasError('required') && apotForm.get('ut')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administracion TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="uu" class="form-control" placeholder="uu">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uu')?.hasError('required') && apotForm.get('uu')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Gestor de Servicio</p>
+        <div class="form-group">
+            <select type="text" formControlName="uv" class="form-control" placeholder="uv">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uv')?.hasError('required') && apotForm.get('uv')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="uw" class="form-control" placeholder="uw">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uw')?.hasError('required') && apotForm.get('uw')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="ux" class="form-control" placeholder="ux">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('ux')?.hasError('required') && apotForm.get('ux')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">Gestor de Privacidad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="uy" class="form-control" placeholder="uy">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apotForm.get('uy')?.hasError('required') && apotForm.get('uy')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/listar-apo" class="btn btn-secondary">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-warning"  [disabled]="apotForm.invalid">Aceptar</button>
+        </div>
+    </form><br>
+    <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" routerLink="/home">APOO1</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/pagina51">1</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/listar-apo">2</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/pagina53">3</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/pagina54">4</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/pagina55">5</a></li>
+          <li class="page-item"><a class="page-link" routerLink="/pagina56">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          
+        </ul>
+      </nav><br>
+
+

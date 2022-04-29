@@ -1,0 +1,242 @@
+<span class="titulo" >{{ titulo | uppercase}}</span>
+<form [formGroup]="cabecerab09Form" (ngSubmit)="agregarCabecerab09()" class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2"
+style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;margin:0 auto;">
+    
+    <div class="form-group">
+        <input type="text" formControlName="q1"
+        class="form-control" placeholder="BAI">  
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q1')?.hasError('required') && cabecerab09Form.get('q1')?.touched">
+            <span>La categoria<b> es obligatoria</b></span>
+        </div>  
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q2"
+        class="form-control" placeholder="BAI">  
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q2')?.hasError('required') && cabecerab09Form.get('q2')?.touched">
+            <span>La categoria<b> es obligatoria</b></span>
+        </div>  
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q3"
+        class="form-control" placeholder="R-A-C-I"> 
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q3')?.hasError('required') && cabecerab09Form.get('q3')?.touched">
+            <span>La ubicación<b> es obligatoria</b></span>
+        </div>   
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q4"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q4')?.hasError('required') && cabecerab09Form.get('q4')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q5"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q5')?.hasError('required') && cabecerab09Form.get('q5')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q6"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q6')?.hasError('required') && cabecerab09Form.get('q6')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q7"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q7')?.hasError('required') && cabecerab09Form.get('q7')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q8"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q8')?.hasError('required') && cabecerab09Form.get('q8')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q9"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q9')?.hasError('required') && cabecerab09Form.get('q9')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q10"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q10')?.hasError('required') && cabecerab09Form.get('q10')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q11"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q11')?.hasError('required') && cabecerab09Form.get('q11')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q12"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q12')?.hasError('required') && cabecerab09Form.get('q12')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q13"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q13')?.hasError('required') && cabecerab09Form.get('q13')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q14"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q14')?.hasError('required') && cabecerab09Form.get('q14')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q15"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q15')?.hasError('required') && cabecerab09Form.get('q15')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q16"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q16')?.hasError('required') && cabecerab09Form.get('q16')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q17"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q17')?.hasError('required') && cabecerab09Form.get('q17')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q18"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q18')?.hasError('required') && cabecerab09Form.get('q18')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q19"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q19')?.hasError('required') && cabecerab09Form.get('q19')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q20"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q20')?.hasError('required') && cabecerab09Form.get('q20')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q21"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q21')?.hasError('required') && cabecerab09Form.get('q21')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q22"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q22')?.hasError('required') && cabecerab09Form.get('q22')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q23"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q23')?.hasError('required') && cabecerab09Form.get('q23')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q24"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q24')?.hasError('required') && cabecerab09Form.get('q24')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q25"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q25')?.hasError('required') && cabecerab09Form.get('q25')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="q26"
+        class="form-control" placeholder="R-A-C-I">   
+        <div class="validacion"
+            *ngIf="cabecerab09Form.get('q26')?.hasError('required') && cabecerab09Form.get('q26')?.touched">
+            <span>El precio<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <div class="ji"><br><br><br>
+        <button class="btn btn-secondary"  routerLink="/pagina163">Volver</button>
+        <button class="btn btn-success" type="submit" [disabled]="cabecerab09Form.invalid" >Aceptar</button>
+    </div>
+</form>

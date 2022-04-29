@@ -1,0 +1,100 @@
+<div class="table-responsive">
+    <table *ngIf="listTablaz.length > 0" class="container">
+        <thead>
+          <tr id="Cabecera_1">
+            <th colspan="50" class="matriz">Matriz RACI MEA01</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let cabeceraz of listCabeceraz" >
+            <th class="align">Practica clave de gobierno</th>
+            <th class="verticalText" >{{ cabeceraz.ka}}</th>
+            <th class="verticalText" >{{ cabeceraz.kb}}</th>
+            <th class="verticalText" >{{ cabeceraz.kc}}</th>
+            <th class="verticalText" >{{ cabeceraz.kd}}</th>
+            <th class="verticalText" >{{ cabeceraz.ke}}</th>
+            <th class="verticalText" >{{ cabeceraz.kf}}</th>
+            <th class="verticalText" >{{ cabeceraz.kg}}</th>
+            <th class="verticalText" >{{ cabeceraz.kh}}</th>
+            <th class="verticalText" >{{ cabeceraz.ki}}</th>
+            <th class="verticalText" >{{ cabeceraz.kj}}</th>
+            <th class="verticalText" >{{ cabeceraz.kk}}</th>
+            <th class="verticalText" >{{ cabeceraz.kl}}</th>
+            <th class="verticalText" >{{ cabeceraz.km}}</th>
+            <th class="verticalText" >{{ cabeceraz.kn}}</th>
+            <th class="verticalText" >{{ cabeceraz.ko}}</th>
+            <th class="verticalText" >{{ cabeceraz.kp}}</th>
+            <th class="verticalText" >{{ cabeceraz.kq}}</th>
+            <th class="verticalText" >{{ cabeceraz.kr}}</th>
+            <th class="verticalText" >{{ cabeceraz.ks}}</th>
+            <th class="verticalText" >{{ cabeceraz.kt}}</th>
+            <th class="verticalText" >{{ cabeceraz.ku}}</th>
+            <th class="verticalText" >{{ cabeceraz.kv}}</th>
+            <th class="verticalText" >{{ cabeceraz.kw}}</th>
+            <th class="verticalText" >{{ cabeceraz.kx}}</th>
+            <th class="verticalText" >{{ cabeceraz.ky}}</th>
+            <th class="verticalText" >{{ cabeceraz.kz}}</th>
+
+            <th class="color-m">
+                <i [routerLink]="['/editar-cabeceraz', cabeceraz._id]" class="fa-solid fa-pen-to-square  ed"></i>
+                <i (click)=" eliminarCabeceraz(cabeceraz._id)" class="fa-solid fa-trash  el"></i> 
+                <!-- <i routerLink="/crear-cabeceraz" class="bi bi-stack nuevo"></i> -->
+            </th>
+          </tr>
+        </tbody>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody>
+          <tr *ngFor="let tablaz of listTablaz" >
+            <th routerLink="/" class="sel">{{tablaz.zaa}}</th>
+            <td>{{ tablaz.za}}</td>
+            <td>{{ tablaz.zb}}</td>
+            <td>{{ tablaz.zc}}</td>
+            <td>{{ tablaz.zd}}</td>
+            <td>{{ tablaz.ze}}</td>
+            <td>{{ tablaz.zf}}</td>
+            <td>{{ tablaz.zg}}</td>
+            <td>{{ tablaz.zh}}</td>
+            <td>{{ tablaz.zi}}</td>
+            <td>{{ tablaz.zj}}</td>
+            <td>{{ tablaz.zk}}</td>
+            <td>{{ tablaz.zl}}</td>
+            <td>{{ tablaz.zm}}</td>
+            <td>{{ tablaz.zn}}</td>
+            <td>{{ tablaz.zo}}</td>
+            <td>{{ tablaz.zp}}</td>
+            <td>{{ tablaz.zq}}</td>
+            <td>{{ tablaz.zr}}</td>
+            <td>{{ tablaz.zs}}</td>
+            <td>{{ tablaz.zt}}</td>
+            <td>{{ tablaz.zu}}</td>
+            <td>{{ tablaz.zv}}</td>
+            <td>{{ tablaz.zw}}</td>
+            <td>{{ tablaz.zx}}</td>
+            <td>{{ tablaz.zy}}</td>
+            <td>{{ tablaz.zz}}</td>
+
+            <th>
+                <i [routerLink]="['/editar-tablaz', tablaz._id]" class="fa-solid fa-pen-to-square  ed"></i>
+                <i (click)=" eliminarTablaz(tablaz._id)" class="fa-solid fa-trash  el"></i>
+                
+            </th>
+          </tr>
+        </tbody>
+      </table>
+      
+      <button routerLink="/crear-tablaz" class="btn btn-success">Nuevo RACI<i class="bi bi-stack nuevo"></i></button>
+      <button routerLink="/crear-cabeceraz" class="btn btn-success">Nuevo cabe<i class="bi bi-stack nuevo"></i></button>
+      <h5 *ngIf="listTablaz.length == 0" >No hay productos para mostrar</h5>
+ </div>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination container">
+      <li class="page-item"><a class="page-link" routerLink="/mea01">1</a></li>
+      <li class="page-item"><a class="page-link" href="listar-tablaz">Tabla RACI</a></li>
+      <li class="page-item"><a class="page-link" href="mea01a">2</a></li>
+      <li class="page-item"><a class="page-link" href="mea01b">3</a></li>
+      <li class="page-item"><a class="page-link" href="mea02">Coninuar MEA02</a></li>
+      
+    </ul>
+    </nav><br>

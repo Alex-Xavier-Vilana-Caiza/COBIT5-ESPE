@@ -1,0 +1,119 @@
+<div >
+    <table *ngIf="listRacicabe04.length > 0" class="table  table-hover  " >
+        <thead   >
+          <tr id="head_10">
+            <th colspan="29" class="matriz">Cuadro raci DSS04</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody >
+         
+          <tr *ngFor="let racicabe04 of listRacicabe04" class="segundoo">
+            
+            <td class="verticaHorizontalt">Práctica Clave de Gobierno</td>
+        
+            <td class="verticalText">{{ racicabe04.gestion1}}</td>
+            <td class="verticalText">{{ racicabe04.gestion2}}</td>
+            <td class="verticalText">{{ racicabe04.gestion3}}</td>
+            <td class="verticalText">{{ racicabe04.gestion4}}</td>
+            <td class="verticalText">{{ racicabe04.gestion5}}</td>
+            <td class="verticalText">{{ racicabe04.gestion6}}</td>
+            <td class="verticalText">{{ racicabe04.gestion7}}</td>
+            <td class="verticalText">{{ racicabe04.gestion8}}</td>
+            <td class="verticalText">{{ racicabe04.gestion9}}</td>
+            <td class="verticalText">{{ racicabe04.gestion10}}</td>
+            <td class="verticalText">{{ racicabe04.gestion11}}</td>
+            <td class="verticalText">{{ racicabe04.gestion12}}</td>
+            <td class="verticalText">{{ racicabe04.gestion13}}</td>
+            <td class="verticalText">{{ racicabe04.gestion14}}</td>
+            <td class="verticalText">{{ racicabe04.gestion15}}</td>
+            <td class="verticalText">{{ racicabe04.gestion16}}</td>
+            <td class="verticalText">{{ racicabe04.gestion17}}</td>
+            <td class="verticalText">{{ racicabe04.gestion18}}</td>
+            <td class="verticalText">{{ racicabe04.gestion19}}</td>
+            <td class="verticalText">{{ racicabe04.gestion20}}</td>
+            <td class="verticalText">{{ racicabe04.gestion21}}</td>
+            <td class="verticalText">{{ racicabe04.gestion22}}</td>
+            <td class="verticalText">{{ racicabe04.gestion23}}</td>
+            <td class="verticalText">{{ racicabe04.gestion24}}</td>
+            <td class="verticalText">{{ racicabe04.gestion25}}</td>
+            <td class="verticalText">{{ racicabe04.gestion26}}</td>
+        
+            <td>
+              <i [routerLink]="['/editar-racicabe04', racicabe04._id]"  class="fa-solid fa-pen-to-square  ed" ></i>
+              <i (click)="eliminarRacicabe04(racicabe04._id)" class="fa-solid fa-trash  el"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+  
+         <tbody>
+          <tr *ngFor="let raci04 of listRaci04" class="segundoo">
+           
+            <td class="segundo">{{ raci04.dss}}</td>
+            <td class="segundo">{{ raci04.dss1}}</td>
+              <td class="segundo">{{ raci04.dss2}}</td>
+              <td class="segundo">{{ raci04.dss3}}</td>
+              <td class="segundo">{{ raci04.dss4}}</td>
+              <td class="segundo">{{ raci04.dss5}}</td>
+              <td class="segundo">{{ raci04.dss6}}</td>
+              <td class="segundo">{{ raci04.dss7}}</td>
+              <td class="segundo">{{ raci04.dss8}}</td>
+              <td class="segundo">{{ raci04.dss9}}</td>
+              <td class="segundo">{{ raci04.dss10}}</td>
+              <td class="segundo">{{ raci04.dss11}}</td>
+              <td class="segundo">{{ raci04.dss12}}</td>
+              <td class="segundo">{{ raci04.dss13}}</td>
+              <td class="segundo">{{ raci04.dss14}}</td>
+              <td class="segundo">{{ raci04.dss15}}</td>
+              <td class="segundo">{{ raci04.dss16}}</td>
+              <td class="segundo">{{ raci04.dss17}}</td>
+              <td class="segundo">{{ raci04.dss18}}</td>
+              <td class="segundo">{{ raci04.dss19}}</td>
+              <td class="segundo">{{ raci04.dss20}}</td>
+              <td class="segundo">{{ raci04.dss21}}</td>
+              <td class="segundo">{{ raci04.dss22}}</td>
+              <td class="segundo">{{ raci04.dss23}}</td>
+              <td class="segundo">{{ raci04.dss24}}</td>
+              <td class="segundo">{{ raci04.dss25}}</td>
+              <td class="segundo">{{ raci04.dss26}}</td>
+             
+              <td>
+                <i [routerLink]="['/editar-raci04', raci04._id]"   class="fa-solid fa-pen-to-square  ed"></i>
+                <i (click)="eliminarRaci04(raci04._id)" class="fa-solid fa-trash  el"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+      </table>
+      <h5 *ngIf="listRacicabe04.length == 0" >No hay Matriz para mostrar</h5>
+  </div> 
+  <br>
+  <br>
+  
+
+  <div class="d-grid gap-2 col-3 mx-auto">
+    <button routerLink="/racicabe04" class="btn btn-primary">Nuevo cabecera raci</button> 
+  <button routerLink="/raci04" class="btn btn-primary">Nuevo tabla raci</button>
+    
+  </div><br>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="/home">HOME</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla1">1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/listraci04">2</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla2">3</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla3">4</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla4">5</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla5">6</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla6">7</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla7">8</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla8">9</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla9">10</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/dsso4tabla10">11</a></li>
+      <li class="page-item"><a class="page-link" href="/dsso4tabla2">Next</a></li>
+      
+    </ul>
+  </nav><br>

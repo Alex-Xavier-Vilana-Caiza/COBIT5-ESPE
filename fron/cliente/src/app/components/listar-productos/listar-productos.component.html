@@ -1,0 +1,102 @@
+<div  class="table-responsive">
+  <span></span>
+
+  <table *ngIf="listProductos.length > 0" class="table  table-hover  "  >
+      <thead>
+        <tr id="Cabecera_1">
+          <th colspan="50" class="matriz">Matriz RACI AP002</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let cabecera of listCabeceras" class="segundoo">
+
+          <th><b>AP002</b><br> Establecer un enfoque de la supervision.</th>
+          <th ><p class="gob">Practicas de Gobierno</p></th>
+          <td class="verticalText">{{ cabecera.ab}}</td>
+          <td class="verticalText">{{ cabecera.bb}}</td>
+          <td class="verticalText">{{ cabecera.cb}}</td>
+          <td class="verticalText">{{ cabecera.db}}</td>
+          
+          <td class="verticalText">{{ cabecera.uno}}</td>
+          <td class="verticalText">{{ cabecera.dos}}</td>
+          <td class="verticalText">{{ cabecera.tres}}</td>
+          <td class="verticalText">{{ cabecera.cuatro}}</td>
+          <td class="verticalText">{{ cabecera.cinco}}</td>
+          <td class="verticalText">{{ cabecera.seis}}</td>
+          <td class="verticalText">{{ cabecera.siete}}</td>
+          <td class="verticalText">{{ cabecera.ocho}}</td>
+          <td class="verticalText">{{ cabecera.nueve}}</td>
+          <td class="verticalText">{{ cabecera.dies}}</td>
+          <td class="verticalText">{{ cabecera.once}}</td>
+          <td class="verticalText">{{ cabecera.doce}}</td>
+
+          
+
+          <td>
+            <i  [routerLink]="['/editar-cabecera', cabecera._id]" class="fa-solid fa-pen-to-square  ed" ></i><br>
+            <i (click)="eliminarCabecera(cabecera._id)" class="fa-solid fa-trash  el" ></i><br>
+            
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr *ngFor="let producto of listProductos" class="segundoo">
+          <td class="segundo" >{{ producto.ap}}</td>
+          <td></td>
+          <td class="segundo" >{{ producto.nombre}}</td>
+          <td class="segundo" >{{ producto.categoria}}</td>
+          <td class="segundo" >{{ producto.ubicacion}}</td>
+          <td class="segundo" >{{ producto.precio }}</td>
+          <td class="segundo" >{{ producto.a }}</td>
+          <td class="segundo" >{{producto.b}}</td>
+          <td class="segundo" >{{producto.c}}</td>
+          <td class="segundo" >{{producto.d}}</td>
+          <td class="segundo" >{{producto.e}}</td>
+          <td class="segundo" >{{producto.f}}</td>
+          <td class="segundo" >{{producto.g}}</td>
+          <td class="segundo" >{{producto.h}}</td>
+          <td class="segundo" >{{producto.i}}</td>
+          <td class="segundo" >{{producto.j}}</td>
+          <td class="segundo" >{{producto.k}}</td>
+          <td class="segundo" >{{producto.l}}</td>
+          
+          <td>
+              <i [routerLink]="['/editar-producto', producto._id]" class="fa-solid fa-pen-to-square  ed"></i><br>
+              <i (click)="eliminarProducto(producto._id)" class="fa-solid fa-trash  el"></i><br>
+              
+              
+              
+              
+          </td>
+        </tr>
+      </tbody>
+      
+
+      <!-- ---------------------------------------------------cabecera------------------------------------------ -->
+
+      <!-- --------------------------------------------fin cabecera-------------------------------------------- -->
+    </table>
+    <h5 *ngIf="listProductos.length == 0" >No hay Datos para mostrar</h5>
+</div><br>
+
+<div class="d-grid gap-2 col-3 mx-auto">
+  <button routerLink="/crear-cabecera" class="btn btn-primary">Nueva cabecera</button>
+  <button routerLink="/crear-producto" class="btn btn-primary" type="button">Nueva Raci</button>
+  
+</div><br>
+
+<nav aria-label="Page navigation  example" class="container" style="width: 87%;">
+  <ul class="pagination container">
+    <li class="page-item"><a class="page-link" >APOO2</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/pagina57">1</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/crear-producto">2</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/pagina59">3</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/pagina60">4</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/pagina61">5</a></li>
+    <li class="page-item"><a class="page-link" routerLink="/pagina62">6</a></li>
+
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+

@@ -1,0 +1,110 @@
+<div class="table-responsive">
+  <table *ngIf="edm01titulolistar.length > 0" >
+      <thead   >
+        <tr id="edm01">
+          <th colspan="29" class="matriz">Matriz RACI EDM01</th>
+        </tr>
+      </thead>
+
+      <!-- -----------------------cabecera------------------------ -->
+
+      <tbody >
+       
+        <tr *ngFor="let edm01titulovar of edm01titulolistar">
+          <th ><p class="gob">Practicas de Gobierno</p></th>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo1}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo2}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo3}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo4}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo5}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo6}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo7}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo8}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo9}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo10}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo11}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo12}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo13}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo14}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo15}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo16}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo17}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo18}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo19}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo20}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo21}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo22}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo23}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo24}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo25}}</td>
+          <td class="verticalText">{{ edm01titulovar.edm01titulo26}}</td>
+        
+          <td>
+            <i [routerLink]="['/editaredm01titulos', edm01titulovar._id]"  class="fa-solid fa-pen-to-square"></i>
+              <i (click)="eliminarEdm01titulo(edm01titulovar._id)" class="fa-solid fa-trash text-danger"></i>
+          </td>
+        </tr>
+      </tbody>
+
+
+      <tbody>
+        <tr *ngFor="let edm01casillasvar of edm01casillaslistar">
+         
+        
+          <td class="segundo">{{ edm01casillasvar.edm01casilla1}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla2}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla3}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla4}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla5}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla6}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla7}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla8}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla9}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla10}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla11}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla12}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla13}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla14}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla15}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla16}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla17}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla18}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla19}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla20}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla21}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla22}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla23}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla24}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla25}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla26}}</td>
+            <td class="segundo">{{ edm01casillasvar.edm01casilla27}}</td>
+            <td>
+              <i [routerLink]="['/editaredm01casillas',edm01casillasvar._id]"  class="fa-solid fa-pen-to-square"></i>
+              <i (click)="eliminarEdm01casilla(edm01casillasvar._id)" class="fa-solid fa-trash text-danger"></i>
+          </td>
+        </tr>
+      </tbody>
+ 
+    </table>
+    <h5 *ngIf="edm01casillaslistar.length == 0" >No hay Matriz para mostrar</h5>
+</div>
+<br>
+<br>
+<button routerLink="/crearedm01casillas" class="btn btn-success" type="button">Crear casilla<i class="bi bi-stack nuevo"></i></button>
+
+
+<br>
+<br>
+<nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="edm03tabla1">EDM02</a></li>
+      <li class="page-item"><a class="page-link" href="edm01tabla1">1</a></li>
+      <li class="page-item"><a class="page-link" href="edm01tabla2">2</a></li>
+      <li class="page-item"><a class="page-link" href="edm01tabla3">3</a></li>
+      <li class="page-item"><a class="page-link" href="edm01tabla4">4</a></li>
+      <li class="page-item"><a class="page-link" href="edm01tabla5">5</a></li>
+      <li class="page-item"><a class="page-link" href="edm01tabla3">Next</a></li>
+      
+    </ul>
+  </nav><br>
+

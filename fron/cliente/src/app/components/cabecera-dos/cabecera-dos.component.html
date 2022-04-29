@@ -1,0 +1,243 @@
+
+<span class="titulo" class="d-grid gap-2 col-4  mx-auto " style="color: white; text-align: center;">{{ titl | uppercase}}</span>
+<form [formGroup]="cabeceradosForm" (ngSubmit)="agregarCabecerados()" 
+     class="form-group" class="container bg-light bc row row-cols-1 row-cols-lg-4 g-1 g-lg-2" style="margin: 0 auto; width: 79%;">
+        
+        <div class="form-group">
+            <input type="text" formControlName="dosa" (ngSubmit)="agregarCabecerados()"  style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosa">
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosa')?.hasError('required') && cabeceradosForm.get('dosa')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div>  
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosb" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosb">  
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosb')?.hasError('required') && cabeceradosForm.get('dosb')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div>  
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosc" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="Ubiación"> 
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosc')?.hasError('required') && cabeceradosForm.get('dosc')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div>   
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosd" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="Precio">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosd')?.hasError('required') && cabeceradosForm.get('dosd')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dose" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dose">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dose')?.hasError('required') && cabeceradosForm.get('dose')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosf" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosf">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosf')?.hasError('required') && cabeceradosForm.get('dosf')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosg" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosg">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosg')?.hasError('required') && cabeceradosForm.get('dosg')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosh" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosh">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosh')?.hasError('required') && cabeceradosForm.get('dosh')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosi" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosi">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosi')?.hasError('required') && cabeceradosForm.get('dosi')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosj" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosj">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosj')?.hasError('required') && cabeceradosForm.get('dosj')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosk" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosk">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosk')?.hasError('required') && cabeceradosForm.get('dosk')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosl" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosl">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosl')?.hasError('required') && cabeceradosForm.get('dosl')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosm" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosm">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosm')?.hasError('required') && cabeceradosForm.get('dosm')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosn" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosn">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosn')?.hasError('required') && cabeceradosForm.get('dosn')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="doso" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="doso">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('doso')?.hasError('required') && cabeceradosForm.get('doso')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosp" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosp">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosp')?.hasError('required') && cabeceradosForm.get('dosp')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosq" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosq">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosq')?.hasError('required') && cabeceradosForm.get('dosq')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosr" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosr">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosr')?.hasError('required') && cabeceradosForm.get('dosr')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="doss" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="doss">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('doss')?.hasError('required') && cabeceradosForm.get('doss')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dost" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dost">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dost')?.hasError('required') && cabeceradosForm.get('dost')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosu" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosu">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosu')?.hasError('required') && cabeceradosForm.get('dosu')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosv" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosv">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosv')?.hasError('required') && cabeceradosForm.get('dosv')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosw" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosw">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosw')?.hasError('required') && cabeceradosForm.get('dosw')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosx" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosx">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosx')?.hasError('required') && cabeceradosForm.get('dosx')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosy" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosy">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosy')?.hasError('required') && cabeceradosForm.get('dosy')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario"></p>
+        <div class="form-group">
+            <input type="text" formControlName="dosz" style="WIDTH: 360px; "size=32
+            class="form-control" placeholder="dosz">   
+            <div class="validacion"
+                *ngIf="cabeceradosForm.get('dosz')?.hasError('required') && cabeceradosForm.get('dosz')?.touched">
+                <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+    <div class="ji" ><br><br>
+        <button type="button"  class="btn btn-danger" style="margin-left: 10px; margin-bottom: 10px;" routerLink="/listar-tablados">Volver</button>
+       <button type="button" class="btn btn-success" style="margin-left: 10px; margin-bottom: 10px;"  type="submit" [disabled]="cabeceradosForm.invalid" >Aceptar</button>
+   </div><br>
+</form><br>

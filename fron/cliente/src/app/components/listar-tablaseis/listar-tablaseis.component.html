@@ -1,0 +1,91 @@
+<div class="table-responsive">
+    <table *ngIf="listCabecera6.length >0" class="table table-striped" class="container" >
+        <thead>
+          <tr id="Cabecera_1">
+            <th  colspan="50"  class="matriz">Matriz RACI BAI06</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+        <tbody >       
+          <tr *ngFor="let cabecera6 of listCabecera6" class="segundoo">
+            <th class="align">Practicas de Gobierno</th>
+            <th class="verticalText">{{ cabecera6.mma}}</th>
+            <th class="verticalText">{{ cabecera6.mmb}}</th>
+            <th class="verticalText">{{ cabecera6.mmc}}</th>
+            <th class="verticalText">{{ cabecera6.mmd}}</th>
+            <th class="verticalText">{{ cabecera6.mme}}</th>
+            <th class="verticalText">{{ cabecera6.mmf}}</th>
+            <th class="verticalText">{{ cabecera6.mmg}}</th>
+            <th class="verticalText">{{ cabecera6.mmh}}</th>
+            <th class="verticalText">{{ cabecera6.mmi}}</th>
+            <th class="verticalText">{{ cabecera6.mmj}}</th>
+            <th class="verticalText">{{ cabecera6.mmk}}</th>
+            <th class="verticalText">{{ cabecera6.mml}}</th>
+            <th class="verticalText">{{ cabecera6.mmm}}</th>
+            <th class="verticalText">{{ cabecera6.mmn}}</th>
+            <th class="verticalText">{{ cabecera6.mmo}}</th>
+            <th class="verticalText">{{ cabecera6.mmp}}</th>
+            <th class="verticalText">{{ cabecera6.mmq}}</th>
+            <th class="verticalText">{{ cabecera6.mmr}}</th>
+            <th class="verticalText">{{ cabecera6.mms}}</th>
+            <th class="verticalText">{{ cabecera6.mmt}}</th>
+            <th class="verticalText">{{ cabecera6.mmu}}</th>
+            <th class="verticalText">{{ cabecera6.mmv}}</th>
+            <th class="verticalText">{{ cabecera6.mmw}}</th>
+            <th class="verticalText">{{ cabecera6.mmx}}</th>
+            <th class="verticalText">{{ cabecera6.mmy}}</th>
+            <th class="verticalText">{{ cabecera6.mmz}}</th>        
+            <td>
+              <i [routerLink]="['/editar-cabecera6', cabecera6._id]"  class="fa-solid fa-pen-to-square ed"></i>
+              <i (click)="eliminarCabecera6(cabecera6._id)" class="fa-solid fa-trash el"></i>  
+            </td>
+          </tr>
+        </tbody>
+  
+        <tbody>
+          <tr *ngFor="let tablaseis of listTablaseiss" class="segundoo">         
+          
+            <th class="sel">{{ tablaseis.BAI06}}</th>
+              <td>{{ tablaseis.qa}}</td>
+              <td>{{ tablaseis.qb}}</td>
+              <td>{{ tablaseis.qc}}</td>
+              <td>{{ tablaseis.qd}}</td>
+              <td>{{ tablaseis.qe}}</td>
+              <td>{{ tablaseis.qf}}</td>
+              <td>{{ tablaseis.qg}}</td>
+              <td>{{ tablaseis.qh}}</td>
+              <td>{{ tablaseis.qi}}</td>
+              <td>{{ tablaseis.qj}}</td>
+              <td>{{ tablaseis.qk}}</td>
+              <td>{{ tablaseis.ql}}</td>
+              <td>{{ tablaseis.qm}}</td>
+              <td>{{ tablaseis.qn}}</td>
+              <td>{{ tablaseis.qo}}</td>
+              <td>{{ tablaseis.qp}}</td>
+              <td>{{ tablaseis.qq}}</td>
+              <td>{{ tablaseis.qr}}</td>
+              <td>{{ tablaseis.qs}}</td>
+              <td>{{ tablaseis.qt}}</td>
+              <td>{{ tablaseis.qu}}</td>
+              <td>{{ tablaseis.qv}}</td>
+              <td>{{ tablaseis.qw}}</td>
+              <td>{{ tablaseis.qx}}</td>
+              <td>{{ tablaseis.qy}}</td>
+              <td>{{ tablaseis.qz}}</td>
+              <td>
+                <i [routerLink]="['/editar-tablaseis', tablaseis._id]"  class="fa-solid fa-pen-to-square ed"></i>
+                <i (click)="eliminarTablaseis(tablaseis._id)" class="fa-solid fa-trash el"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 *ngIf="listTablaseiss.length == 0" >No hay Matriz para mostrar</h5>
+</div>
+<div class="d-grid gap-1 col-3 mx-auto  d-grid gap-1 d-md-block">
+  <button routerLink="/crear-tablaseis" class="btn btn-success" type="button">Crear Tabla<i class="bi bi-stack nuevo"></i></button>
+  <!-- <button routerLink="/crear-cabecera6" class="btn btn-primary" type="button">Crear Cabecera</button> -->
+</div>
+  <br><br>
+  <br>
+  

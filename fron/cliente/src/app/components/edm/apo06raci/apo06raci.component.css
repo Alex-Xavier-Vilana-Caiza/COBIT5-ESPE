@@ -1,0 +1,117 @@
+.verticalText {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: relative;
+    width: 0px;
+    }
+
+.matriz{
+background-color: rgba(34, 56, 224, 0.847);
+width: -500%;
+}
+.gob{
+    width: 50%;
+    height:50px;
+    position: relative;
+    top:80px;
+}
+
+
+
+
+
+table {
+    width: 80%;
+    border: solid 1px;
+    border-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(1, 1, 15);
+}
+
+#col1 {
+    width: 22%;
+    border: solid 1px;
+    border-color: black;
+    font-size: 12px;
+
+}
+
+#tablatxt h1 {
+    font-family: 'Arial', Times, serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(148, 190, 243);
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+#colall {
+    width: 4%;
+    border: solid 1px;
+    border-color: black;
+    writing-mode: vertical-lr;
+
+}
+
+
+thead td {
+    text-align: left;
+    background-color: rgb(241, 241, 243);
+
+}
+
+td {
+    font-size: 12px;
+    border: solid 5px;
+    border-color: black;
+    background-color: rgb(241, 241, 243);
+}
+
+tbody th {
+    font-size: 12px;
+    border: solid 1px;
+    border-color: black;
+    background-color: rgb(247, 248, 253);
+}
+table{
+width: 50%;
+}
+
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+background-color: rgb(253, 254, 255);
+}
+
+th, td {
+padding:10px;
+}
+
+th{
+text-align: left;
+}
+
+nav{
+height: 13%;
+
+}
+.navbar-light{
+background: #fffefe;
+}
+img{
+width: 15%;
+}

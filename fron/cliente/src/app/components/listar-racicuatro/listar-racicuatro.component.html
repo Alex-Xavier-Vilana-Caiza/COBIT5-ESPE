@@ -1,0 +1,97 @@
+<div class="table-responsive">
+    
+    
+    
+    <table *ngIf="listRacicuatro.length > 0" class="table table-striped" class="container">
+        <thead>
+          <tr id="Cabecera_1">
+            <th colspan="50" class="matriz">  Matriz RACI BAI04 </th>
+          </tr> 
+          <!-- //cabeceraBAI04 -->
+        
+          <tr *ngFor="let cabecerab04 of listCabecerab04">
+            <th class="align">Práctica Clave del Gobierno</th>
+            <th class="verticalText" >{{cabecerab04.n1}}</th>
+            <th class="verticalText">{{cabecerab04.n2}}</th>
+            <th class="verticalText">{{cabecerab04.n3}}</th>
+            <th class="verticalText">{{cabecerab04.n4}}</th>
+            <th class="verticalText">{{cabecerab04.n5}}</th>
+            <th class="verticalText">{{cabecerab04.n6}}</th>
+            <th class="verticalText">{{cabecerab04.n7}}</th>
+            <th class="verticalText">{{cabecerab04.n8}}</th>
+            <th class="verticalText">{{cabecerab04.n9}}</th>
+            <th class="verticalText">{{cabecerab04.n10}}</th>
+            <th class="verticalText">{{cabecerab04.n11}}</th>
+            <th class="verticalText">{{cabecerab04.n12}}</th>
+            <th class="verticalText">{{cabecerab04.n13}}</th>
+            <th class="verticalText">{{cabecerab04.n14}}</th>
+            <th class="verticalText">{{cabecerab04.n15}}</th>
+            <th class="verticalText">{{cabecerab04.n16}}</th>
+            <th class="verticalText">{{cabecerab04.n17}}</th>
+            <th class="verticalText">{{cabecerab04.n18}}</th>
+            <th class="verticalText">{{cabecerab04.n19}}</th>
+            <th class="verticalText">{{cabecerab04.n20}}</th>
+            <th class="verticalText">{{cabecerab04.n21}}</th>
+            <th class="verticalText">{{cabecerab04.n22}}</th>
+            <th class="verticalText">{{cabecerab04.n23}}</th>
+            <th class="verticalText">{{cabecerab04.n24}}</th>
+            <th class="verticalText">{{cabecerab04.n25}}</th>
+            <th class="verticalText">{{cabecerab04.n26}}</th>
+            
+           
+            
+            <td>
+    
+              <i  [routerLink]="['/editar-cabecerab04', cabecerab04._id]" class="fa-solid fa-pen-to-square ed" ></i>
+              <!-- <i (click)="eliminarCabecerab04(cabecerab04._id)" class="fa-solid fa-trash el" ></i> -->
+        </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let racicuatro of listRacicuatro">
+            <th class="sel" >{{racicuatro.d1}}</th>
+            <td >{{racicuatro.d2}}</td>
+            <td >{{racicuatro.d3}}</td>
+            <td >{{racicuatro.d4}}</td>
+            <td >{{racicuatro.d5}}</td>
+            <td >{{racicuatro.d6}}</td>
+            <td >{{racicuatro.d7}}</td>
+            <td >{{racicuatro.d8}}</td>
+            <td >{{racicuatro.d9}}</td>
+            <td >{{racicuatro.d10}}</td>
+            <td >{{racicuatro.d11}}</td>
+            <td >{{racicuatro.d12}}</td>
+            <td >{{racicuatro.d13}}</td>
+            <td >{{racicuatro.d14}}</td>
+            <td >{{racicuatro.d15}}</td>
+            <td >{{racicuatro.d16}}</td>
+            <td >{{racicuatro.d17}}</td>
+            <td >{{racicuatro.d18}}</td>
+            <td >{{racicuatro.d19}}</td>
+            <td >{{racicuatro.d20}}</td>
+            <td >{{racicuatro.d21}}</td>
+            <td >{{racicuatro.d22}}</td>
+            <td >{{racicuatro.d23}}</td>
+            <td >{{racicuatro.d24}}</td>
+            <td >{{racicuatro.d25}}</td>
+            <td >{{racicuatro.d26}}</td>
+            <td >{{racicuatro.d27}}</td>
+
+            
+            
+        <td>
+    
+              <i  [routerLink]="['/editar-racicuatro', racicuatro._id]" class="fa-solid fa-pen-to-square ed" ></i>
+              <i  (click)="eliminarRacicuatro(racicuatro._id)" class="fa-solid fa-trash el" ></i>
+              
+        </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <button routerLink="/crear-racicuatro" class="btn btn-success" type="button">Nuevo<i class="bi bi-stack nuevo"></i></button>
+      <!-- <button routerLink="/crear-cabecerab04" class="btn btn-danger">Nuevo cabecera</button> -->
+</div><br>
+<h5 *ngIf="listRacicuatro.length == 0" >No hay Matriz para mostrar</h5>
+
+<br>

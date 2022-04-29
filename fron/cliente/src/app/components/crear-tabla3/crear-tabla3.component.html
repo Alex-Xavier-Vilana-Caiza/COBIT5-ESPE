@@ -1,0 +1,418 @@
+<form>
+    <div>
+        <span class="titulo" class="d-grid gap-2 col-2  mx-auto " >{{title}}</span>
+        <form class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2"
+        style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;margin:0 auto;"
+         [formGroup]="tabla3Form" (ngSubmit)="agregarTabla3()">
+         <p class="li">Practica clave de gobierno</p>
+        <div class="form-group">
+            <select type="text" formControlName="BAI03" class="form-control" placeholder="BAI03">
+               <option>BAI03.01.<br> Diseñar soluciones de alto nivel.</option>
+               <option>BAI03.02.<br> Diseñar los componentes detallados de la solución.</option>
+               <option>BAI03.03.<br> Desarrollar los componentes de la solución.</option>
+               <option>BAI03.04.<br> Obtener los componentes de la solución.</option>
+               <option>BAI03.05.<br> Construir soluciones.</option>
+               <option>BAI03.06.<br> Realizar controles de calidad.</option>
+               <option>BAI03.07.<br> Preparar pruebas de la solución.</option>
+               <option>BAI03.08.<br> Ejecutar pruebas de la solución.</option>
+               <option>BAI03.09.<br> Gestionar cambios a los requerimientos.</option>
+               <option>BAI03.10.<br> Mantener soluciones.</option>
+               <option>BAI03.11.<br> Definir los servicios TI y mantener el catálogo de servicios.</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tabla3Form.get('BAI03')?.hasError('required') && tabla3Form.get('BAI03')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>   
+            <div class="form-group">
+                <select type="text" formControlName="tbl1" class="form-control" placeholder="1">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl1')?.hasError('required') && tabla3Form.get('tbl1')?.touched">
+            <span>El 1<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Director General Ejecutivo (CEO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="tbl2" class="form-control" placeholder="2">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl2')?.hasError('required') && tabla3Form.get('tbl2')?.touched">
+            <span>El 2<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Director General Financiero(CFO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="tbl3" class="form-control" placeholder="3">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl3')?.hasError('required') && tabla3Form.get('tbl3')?.touched">
+            <span>El 3<b> es obligatorio</b></span>
+        </div>
+            </div>
+        <p class="li">Director de Operaciones(COO)</p> 
+            <div class="form-group">
+                <select type="text" formControlName="tbl4" class="form-control" placeholder="4">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl4')?.hasError('required') && tabla3Form.get('tbl4')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Ejecutivos de negocio</p>
+            <div class="form-group">
+                <select type="text" formControlName="tbl5" class="form-control" placeholder="5">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl5')?.hasError('required') && tabla3Form.get('tbl5')?.touched">
+            <span>El 5<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Propietarios de los procesos de negocio</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl7" class="form-control" placeholder="7">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl7')?.hasError('required') && tabla3Form.get('tbl7')?.touched">
+            <span>El 7<b> es obligatorio</b></span>
+        </div>
+            </div>        
+            <p class="li">Comité Ejecutivo Estratégico</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl8" class="form-control" placeholder="8">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl8')?.hasError('required') && tabla3Form.get('tbl8')?.touched">
+            <span>El 8<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Comité Estratégico (Desarrollo/Proyectos)</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl9" class="form-control" placeholder="9">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl9')?.hasError('required') && tabla3Form.get('tbl9')?.touched">
+            <span>El 9<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Oficina de Gestión de Proyectos</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl10" class="form-control" placeholder="10">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl10')?.hasError('required') && tabla3Form.get('tbl10')?.touched">
+            <span>El 10<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Oficina de Gestión del Valor</p>
+ 
+            <div class="form-group">
+                <select type="text" formControlName="tbl11" class="form-control" placeholder="11">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl11')?.hasError('required') && tabla3Form.get('tbl11')?.touched">
+            <span>El 11<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Director de Riesgos (CRO)</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl12" class="form-control" placeholder="12">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl12')?.hasError('required') && tabla3Form.get('tbl12')?.touched">
+            <span>El 12<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Director de Seguridad de la Información (CISO)</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl13" class="form-control" placeholder="13">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl13')?.hasError('required') && tabla3Form.get('tbl13')?.touched">
+            <span>El 13<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Consejo de Arquitectura de la Empresa</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl14" class="form-control" placeholder="14">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl14')?.hasError('required') && tabla3Form.get('tbl14')?.touched">
+            <span>El 14<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Comité de Riesgos Corporativos</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl15" class="form-control" placeholder="15">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl15')?.hasError('required') && tabla3Form.get('tbl15')?.touched">
+            <span>El 15<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Jefe de Recursos Humanos</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl16" class="form-control" placeholder="16">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl16')?.hasError('required') && tabla3Form.get('tbl16')?.touched">
+            <span>El 16<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Cumplimiento Normativo (Compliance)</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl17" class="form-control" placeholder="17">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl17')?.hasError('required') && tabla3Form.get('tbl17')?.touched">
+            <span>El 17<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Auditoria</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl18" class="form-control" placeholder="18">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl18')?.hasError('required') && tabla3Form.get('tbl18')?.touched">
+            <span>El 18<b> es obligatorio</b></span>
+        </div>
+            </div>
+
+            <p class="li">Director de Informática/Sistemas (CIO)</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl19" class="form-control" placeholder="19">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl19')?.hasError('required') && tabla3Form.get('tbl19')?.touched">
+            <span>El 19<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Jefe de Arquitectura del Negocio</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl20" class="form-control" placeholder="20">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl20')?.hasError('required') && tabla3Form.get('tbl20')?.touched">
+            <span>El 20<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Jefe de Desarrollo</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl21" class="form-control" placeholder="21">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl21')?.hasError('required') && tabla3Form.get('tbl21')?.touched">
+            <span>El 21<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Jefe de Operaciones TI</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl22" class="form-control" placeholder="22">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl22')?.hasError('required') && tabla3Form.get('tbl22')?.touched">
+            <span>El 22<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Jefe de Administración TI</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl23" class="form-control" placeholder="23">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl23')?.hasError('required') && tabla3Form.get('tbl23')?.touched">
+            <span>El 5<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Gestor de Servicio (Service Manager)</p>
+ 
+            <div class="form-group">
+                <select type="text" formControlName="tbl24" class="form-control" placeholder="24">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl24')?.hasError('required') && tabla3Form.get('tbl24')?.touched">
+            <span>El 24<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Gestor de Seguridad de la Información</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl25" class="form-control" placeholder="25">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl25')?.hasError('required') && tabla3Form.get('tbl25')?.touched">
+            <span>El 25<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Gestor de Continuidad de Negocio</p>
+
+            <div class="form-group">
+                <select type="text" formControlName="tbl26" class="form-control" placeholder="26">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl26')?.hasError('required') && tabla3Form.get('tbl26')?.touched">
+            <span>El 26<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <p class="li">Gestor de Privacidad de la Información</p>
+  
+            <div class="form-group">
+                <select type="text" formControlName="tbl27" class="form-control" placeholder="27">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="tabla3Form.get('tbl27')?.hasError('required') && tabla3Form.get('tbl26')?.touched">
+            <span>El 27<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <div class="ji">
+                <button routerLink="/pagina134" class="btn btn-danger">Volver</button>
+                <button type="submit" class="btn btn-success" [disabled]="tabla3Form.invalid"  >Aceptar</button>
+            </div>
+        </form>
+    </div>

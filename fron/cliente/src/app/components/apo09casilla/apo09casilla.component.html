@@ -1,0 +1,393 @@
+<div>
+    <span class="d-grid gap-2 col-4  mx-auto ">{{title}}</span><br><br>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-4 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;"
+    [formGroup]="apo09casillaForm" (ngSubmit)="agregarApo09casilla()" >
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group" >
+            <select type="text" formControlName="apo09casilla1" class="form-control" placeholder="apo09casilla1">
+                <option>APO09.01.<br>Evaluar la optimizacion del valor</option>
+               <option>APO09.02.<br> Orientar la optimizacion del valor</option>
+               <option>APO09.03.<br> Supervisar la optimizacion del valor</option>
+               <option>APO09.04.<br> Orientar la optimizacion del valor</option>
+               <option>APO09.05.<br> Supervisar la optimizacion del valor</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla1')?.hasError('required') && apo09casillaForm.get('apo09casilla1')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla2" class="form-control" placeholder="apo09casilla2">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla2')?.hasError('required') && apo09casillaForm.get('apo09casilla2')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla3" class="form-control" placeholder="apo09casilla3">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla3')?.hasError('required') && apo09casillaForm.get('apo09casilla3')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Directo General Financiero (CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla4" class="form-control" placeholder="apo09casilla4">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla4')?.hasError('required') && apo09casillaForm.get('apo09casilla4')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director Operacio (COO)nes</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla5" class="form-control" placeholder="apo09casilla5">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla5')?.hasError('required') && apo09casillaForm.get('apo09casilla5')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">Ejecutivo de Negocios</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla6" class="form-control" placeholder="apo09casilla6">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla6')?.hasError('required') && apo09casillaForm.get('apo09casilla6')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los Procos de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla7" class="form-control" placeholder="apo09casilla7">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla7')?.hasError('required') && apo09casillaForm.get('apo09casilla7')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">comite Ejecutivo Estrategico</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla8" class="form-control" placeholder="apo09casilla8">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla8')?.hasError('required') && apo09casillaForm.get('apo09casilla8')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite Estrategico(Desarollo Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla9" class="form-control" placeholder="apo09casilla9">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla9')?.hasError('required') && apo09casillaForm.get('apo09casilla9')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla10" class="form-control" placeholder="apo09casilla10">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla10')?.hasError('required') && apo09casillaForm.get('apo09casilla10')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla11" class="form-control" placeholder="apo09casilla11">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla11')?.hasError('required') && apo09casillaForm.get('apo09casilla11')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla12" class="form-control" placeholder="apo09casilla12">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla12')?.hasError('required') && apo09casillaForm.get('apo09casilla12')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de Informacion (CSO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla13" class="form-control" placeholder="apo09casilla13">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla13')?.hasError('required') && apo09casillaForm.get('apo09casilla13')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla14" class="form-control" placeholder="apo09casilla14">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla14')?.hasError('required') && apo09casillaForm.get('apo09casilla14')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla15" class="form-control" placeholder="apo09casilla15">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla15')?.hasError('required') && apo09casillaForm.get('apo09casilla15')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla16" class="form-control" placeholder="apo09casilla16">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla16')?.hasError('required') && apo09casillaForm.get('apo09casilla16')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo(Complice)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla17" class="form-control" placeholder="apo09casilla17">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla17')?.hasError('required') && apo09casillaForm.get('apo09casilla17')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla18" class="form-control" placeholder="apo09casilla18">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla18')?.hasError('required') && apo09casillaForm.get('apo09casilla18')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informatica Sistema (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla19" class="form-control" placeholder="apo09casilla19">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla19')?.hasError('required') && apo09casillaForm.get('apo09casilla19')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla20" class="form-control" placeholder="apo09casilla20">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla20')?.hasError('required') && apo09casillaForm.get('apo09casilla20')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Jefe de Desarollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla21" class="form-control" placeholder="apo09casilla21">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla21')?.hasError('required') && apo09casillaForm.get('apo09casilla21')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla22" class="form-control" placeholder="apo09casilla22">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla22')?.hasError('required') && apo09casillaForm.get('apo09casilla22')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administracion TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla23" class="form-control" placeholder="apo09casilla23">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla23')?.hasError('required') && apo09casillaForm.get('apo09casilla23')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Gestor de Servicio</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla24" class="form-control" placeholder="apo09casilla24">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla24')?.hasError('required') && apo09casillaForm.get('apo09casilla24')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla25" class="form-control" placeholder="apo09casilla25">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla25')?.hasError('required') && apo09casillaForm.get('apo09casilla25')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla26" class="form-control" placeholder="apo09casilla26">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla26')?.hasError('required') && apo09casillaForm.get('apo09casilla26')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">Gestor de Privacidad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="apo09casilla27" class="form-control" placeholder="apo09casilla27">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="apo09casillaForm.get('apo09casilla27')?.hasError('required') && apo09casillaForm.get('apo09casilla27')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/Apo09raci" class="btn btn-secondary">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-success" [disabled]="apo09casillaForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>
+
+
+
+

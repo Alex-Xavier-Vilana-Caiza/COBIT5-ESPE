@@ -1,0 +1,101 @@
+<div class="table-responsive">
+    <table *ngIf="listTablax.length > 0" class="container">
+        <thead>
+          <tr id="Cabecera_1">
+            <th colspan="50" class="matriz">Matriz RACI MEA02</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cabecerax of listCabecerax">
+            <th class="align">Practica clave de gobierno</th>
+            <th class="verticalText" >{{ cabecerax.ua}}</th>
+            <th class="verticalText" >{{ cabecerax.ub}}</th>
+            <th class="verticalText" >{{ cabecerax.uc}}</th>
+            <th class="verticalText" >{{ cabecerax.ud}}</th>
+            <th class="verticalText" >{{ cabecerax.ue}}</th>
+            <th class="verticalText" >{{ cabecerax.uf}}</th>
+            <th class="verticalText" >{{ cabecerax.ug}}</th>
+            <th class="verticalText" >{{ cabecerax.uh}}</th>
+            <th class="verticalText" >{{ cabecerax.ui}}</th>
+            <th class="verticalText" >{{ cabecerax.uj}}</th>
+            <th class="verticalText" >{{ cabecerax.uk}}</th>
+            <th class="verticalText" >{{ cabecerax.ul}}</th>
+            <th class="verticalText" >{{ cabecerax.um}}</th>
+            <th class="verticalText" >{{ cabecerax.un}}</th>
+            <th class="verticalText" >{{ cabecerax.uo}}</th>
+            <th class="verticalText" >{{ cabecerax.up}}</th>
+            <th class="verticalText" >{{ cabecerax.uq}}</th>
+            <th class="verticalText" >{{ cabecerax.ur}}</th>
+            <th class="verticalText" >{{ cabecerax.us}}</th>
+            <th class="verticalText" >{{ cabecerax.ut}}</th>
+            <th class="verticalText" >{{ cabecerax.uu}}</th>
+            <th class="verticalText" >{{ cabecerax.uv}}</th>
+            <th class="verticalText" >{{ cabecerax.uw}}</th>
+            <th class="verticalText" >{{ cabecerax.ux}}</th>
+            <th class="verticalText" >{{ cabecerax.uy}}</th>
+            <th class="verticalText" >{{ cabecerax.uz}}</th>
+
+            <th>
+                <i [routerLink]="['/editar-cabecerax', cabecerax._id]" class="fa-solid fa-pen-to-square  ed"></i>
+                <!-- <i (click)=" eliminarCabecerax(cabecerax._id)" class="fa-solid fa-trash  el"></i>
+                <i routerLink="/crear-cabecerax" class="bi bi-stack nuevo"></i> -->
+            </th>
+          </tr>
+        </tbody>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody>
+          <tr *ngFor="let tablax of listTablax">
+            <th routerLink="/" class="sel">{{tablax.xaa}}</th>
+            <td class="segundo" >{{ tablax.xa}}</td>
+            <td class="segundo" >{{ tablax.xb}}</td>
+            <td class="segundo" >{{ tablax.xc}}</td>
+            <td class="segundo" >{{ tablax.xd}}</td>
+            <td class="segundo" >{{ tablax.xe}}</td>
+            <td class="segundo" >{{ tablax.xf}}</td>
+            <td class="segundo" >{{ tablax.xg}}</td>
+            <td class="segundo" >{{ tablax.xh}}</td>
+            <td class="segundo" >{{ tablax.xi}}</td>
+            <td class="segundo" >{{ tablax.xj}}</td>
+            <td class="segundo" >{{ tablax.xk}}</td>
+            <td class="segundo" >{{ tablax.xl}}</td>
+            <td class="segundo" >{{ tablax.xm}}</td>
+            <td class="segundo" >{{ tablax.xn}}</td>
+            <td class="segundo" >{{ tablax.xo}}</td>
+            <td class="segundo" >{{ tablax.xp}}</td>
+            <td class="segundo" >{{ tablax.xq}}</td>
+            <td class="segundo" >{{ tablax.xr}}</td>
+            <td class="segundo" >{{ tablax.xs}}</td>
+            <td class="segundo" >{{ tablax.xt}}</td>
+            <td class="segundo" >{{ tablax.xu}}</td>
+            <td class="segundo" >{{ tablax.xv}}</td>
+            <td class="segundo" >{{ tablax.xw}}</td>
+            <td class="segundo" >{{ tablax.xx}}</td>
+            <td class="segundo" >{{ tablax.xy}}</td>
+            <td class="segundo" >{{ tablax.xz}}</td>
+
+            <th>
+                <i [routerLink]="['/editar-tablax', tablax._id]" class="fa-solid fa-pen-to-square  ed"></i>
+                <i (click)=" eliminarTablax(tablax._id)" class="fa-solid fa-trash  el"></i>
+               
+            </th>
+          </tr>
+        </tbody>
+
+      </table>
+      <button routerLink="/crear-tablax" class="btn btn-success">Nuevo RACI<i class="bi bi-stack nuevo"></i></button>
+      <button routerLink="/crear-cabecerax" class="btn btn-success">Nuevo RACI Cab<i class="bi bi-stack nuevo"></i></button>
+      <h5 *ngIf="listTablax.length == 0" >No hay productos para mostrar</h5>
+  </div>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="mea02">1</a></li>
+      <li class="page-item"><a class="page-link" href="listar-tablax">Tabla RACI</a></li>
+      <li class="page-item"><a class="page-link" href="mea02a">2</a></li>
+      <li class="page-item"><a class="page-link" href="mea02b">3</a></li>
+      <li class="page-item"><a class="page-link" href="mea02c">4</a></li>
+      <li class="page-item"><a class="page-link" href="mea02d">5</a></li>
+      <li class="page-item"><a class="page-link" href="meao3tabla1">Continuar MEA03</a></li>
+    </ul>
+    </nav><br>

@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: #2c3e50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+      
+  
+  }
+  
+  nav{
+      height: 13%;
+     
+  }
+  .navbar-light{
+      background: #d2edff;
+  }
+  img{
+      width: 15%;
+  }
+  
+  
+  
+  .row{
+      width: 80%;
+  }
+  
+  span .tc{
+  
+      width: 25px;
+      
+      
+  }
+  h1.texto {
+      font-size: 25px;
+  }
+  
+  .tf{
+      margin: 55px;
+      width: 15%;
+      float: right;
+      margin: 45px  57px;
+  }
+  .bc{
+      width: 69%;
+     
+  }
+  .lk{
+      height: 10px;
+  }
+  
+  table{
+      width: 100%;
+    }
+    
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: rgb(253, 254, 255);
+    }
+    
+    th, td {
+      padding: 9px;
+    }
+    
+    th{
+      text-align: left;
+    }
+  
+    
+  nav{
+    height: 13%;
+   
+  }
+  .navbar-light{
+    background: #fffefe;
+  }
+  img{
+    width: 15%;
+  }
+  
+  .barra{
+    background: #C06C84;
+  }
+  .parafo{
+    font-size: 9px;
+  }
+  .co{
+    left: 10px;
+  }
+
+  .titulos{
+    color: white; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size:18px;
+  
+    
+   
+}
+
+.titulos2{
+    color: white; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size:16px;
+    width: 300px;
+    
+    
+   
+}
+
+.theader{
+    background-color: rgb(47, 120, 180);
+   
+    
+}
+
+.theader2{
+    background-color: #7783ec;
+    
+    
+}
+
+.fondo{
+    background-color: #c5e4f8;
+}
+
+.fondo2{
+    background-color: #7783ec;
+}
+
+  

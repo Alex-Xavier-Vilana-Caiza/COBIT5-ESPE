@@ -1,0 +1,388 @@
+<div>
+    <span class="d-grid gap-2 col-4  mx-auto ">{{title}}</span><br><br>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-5 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;"
+    [formGroup]="threeForm" (ngSubmit)="agregarThree()" >
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group" >
+            <select type="text" formControlName="EDM3" class="form-control" placeholder="EDM3">
+                <option>EDM02.01.<br>Evaluar la optimizacion del valor</option>
+               <option>EDM02.02.<br> Orientar la optimizacion del valor</option>
+               <option>EDM02.03.<br> Supervisar la optimizacion del valor</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('EDM3')?.hasError('required') && threeForm.get('EDM3')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="pa" class="form-control" placeholder="pa">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pa')?.hasError('required') && threeForm.get('pa')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="pb" class="form-control" placeholder="pb">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pb')?.hasError('required') && threeForm.get('pb')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Directo General Financiero (CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="pc" class="form-control" placeholder="pc">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pc')?.hasError('required') && threeForm.get('pc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director Operacio (COO)nes</p>
+        <div class="form-group">
+            <select type="text" formControlName="pd" class="form-control" placeholder="pd">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pd')?.hasError('required') && threeForm.get('pd')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">Ejecutivo de Negocios</p>
+        <div class="form-group">
+            <select type="text" formControlName="pe" class="form-control" placeholder="pe">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pe')?.hasError('required') && threeForm.get('pe')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los Procos de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="pf" class="form-control" placeholder="pf">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pf')?.hasError('required') && threeForm.get('pf')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">comite Ejecutivo Estrategico</p>
+        <div class="form-group">
+            <select type="text" formControlName="pg" class="form-control" placeholder="pg">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pg')?.hasError('required') && threeForm.get('pg')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite Estrategico(Desarollo Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ph" class="form-control" placeholder="ph">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('ph')?.hasError('required') && threeForm.get('ph')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="pi" class="form-control" placeholder="pi">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pi')?.hasError('required') && threeForm.get('pi')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="pj" class="form-control" placeholder="pj">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pj')?.hasError('required') && threeForm.get('pj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="pk" class="form-control" placeholder="pk">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pk')?.hasError('required') && threeForm.get('pk')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de Informacion (CSO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="pl" class="form-control" placeholder="pl">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pl')?.hasError('required') && threeForm.get('pl')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="pm" class="form-control" placeholder="pm">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pm')?.hasError('required') && threeForm.get('pm')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="pn" class="form-control" placeholder="pn">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pn')?.hasError('required') && threeForm.get('pn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="pnn" class="form-control" placeholder="pnn">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pnn')?.hasError('required') && threeForm.get('pnn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo(Complice)</p>
+        <div class="form-group">
+            <select type="text" formControlName="po" class="form-control" placeholder="po">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('po')?.hasError('required') && threeForm.get('po')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="pp" class="form-control" placeholder="pp">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pp')?.hasError('required') && threeForm.get('pp')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informatica Sistema (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="pq" class="form-control" placeholder="pq">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pq')?.hasError('required') && threeForm.get('pq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="pr" class="form-control" placeholder="pr">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pr')?.hasError('required') && threeForm.get('pr')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Jefe de Desarollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="ps" class="form-control" placeholder="ps">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('ps')?.hasError('required') && threeForm.get('ps')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="pt" class="form-control" placeholder="pt">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pt')?.hasError('required') && threeForm.get('pt')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administracion TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="pu" class="form-control" placeholder="pu">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pu')?.hasError('required') && threeForm.get('pu')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Gestor de Servicio</p>
+        <div class="form-group">
+            <select type="text" formControlName="pv" class="form-control" placeholder="pv">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pv')?.hasError('required') && threeForm.get('pv')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="pw" class="form-control" placeholder="pw">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('pw')?.hasError('required') && threeForm.get('pw')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="px" class="form-control" placeholder="px">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('px')?.hasError('required') && threeForm.get('px')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">Gestor de Privacidad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="py" class="form-control" placeholder="py">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="threeForm.get('py')?.hasError('required') && threeForm.get('py')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/listar-three" class="btn btn-danger">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-success" [disabled]="threeForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>

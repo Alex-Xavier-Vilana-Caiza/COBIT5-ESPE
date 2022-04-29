@@ -1,0 +1,410 @@
+<form>
+    <div>
+        <span>{{titulo}}</span>
+        <form [formGroup]="bai09Form" (ngSubmit)="agregarBai09()"  class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2"
+        style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;margin: 0 auto;margin: 0 auto;">
+        <p class="li">Practica clave de gobierno</p>
+            <div class="form-group">
+                <input type="text" formControlName="i1"
+                class="form-control" placeholder="BAI">   
+                <div class="validacion"
+                    *ngIf="bai09Form.get('i1')?.hasError('required') && bai09Form.get('i1')?.touched">
+                    <span>El a<b> es obligatorio</b></span>
+                </div> 
+            </div>
+            <br>
+            <p class="li">Consejo de Administracion</p>   
+            <div class="form-group">
+                <select type="text" formControlName="i2" class="form-control" placeholder="1">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i2')?.hasError('required') && bai09Form.get('i2')?.touched">
+            <span>El 1<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Director General Ejecutivo (CEO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i3" class="form-control" placeholder="2">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i3')?.hasError('required') && bai09Form.get('i3')?.touched">
+            <span>El 2<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Director General Financiero(CFO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i4" class="form-control" placeholder="3">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i4')?.hasError('required') && bai09Form.get('i4')?.touched">
+            <span>El 3<b> es obligatorio</b></span>
+        </div>
+            </div>
+          <br>
+          <p class="li">Director de Operaciones(COO)</p> 
+            <div class="form-group">
+                <select type="text" formControlName="i5" class="form-control" placeholder="4">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i5')?.hasError('required') && bai09Form.get('i5')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Ejecutivos de negocio</p>
+            <div class="form-group">
+                <select type="text" formControlName="i6" class="form-control" placeholder="5">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i6')?.hasError('required') && bai09Form.get('i6')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Propietarios de los procesos de negocio</p>
+            <div class="form-group">
+                <select type="text" formControlName="i7" class="form-control" placeholder="6">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i7')?.hasError('required') && bai09Form.get('i7')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Comité Ejecutivo Estratégico</p>
+            <div class="form-group">
+                <select type="text" formControlName="i8" class="form-control" placeholder="7">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i8')?.hasError('required') && bai09Form.get('i8')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Comité Estratégico (Desarrollo/Proyectos)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i9" class="form-control" placeholder="8">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i9')?.hasError('required') && bai09Form.get('i9')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Oficina de Gestión de Proyectos</p>
+            <div class="form-group">
+                <select type="text" formControlName="i10" class="form-control" placeholder="9">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i10')?.hasError('required') && bai09Form.get('i10')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Oficina de Gestión del Valor</p>
+            <div class="form-group">
+                <select type="text" formControlName="i11" class="form-control" placeholder="10">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i11')?.hasError('required') && bai09Form.get('i11')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Director de Riesgos (CRO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i12" class="form-control" placeholder="11">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i12')?.hasError('required') && bai09Form.get('i12')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Director de Seguridad de la Información (CISO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i13" class="form-control" placeholder="12">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i13')?.hasError('required') && bai09Form.get('i13')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Consejo de Arquitectura de la Empresa</p>
+            <div class="form-group">
+                <select type="text" formControlName="i14" class="form-control" placeholder="13">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i14')?.hasError('required') && bai09Form.get('i14')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Comité de Riesgos Corporativos</p>
+            <div class="form-group">
+                <select type="text" formControlName="i15" class="form-control" placeholder="14">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i15')?.hasError('required') && bai09Form.get('i15')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Jefe de Recursos Humanos</p>
+            <div class="form-group">
+                <select type="text" formControlName="i16" class="form-control" placeholder="15">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i16')?.hasError('required') && bai09Form.get('i16')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Cumplimiento Normativo (Compliance)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i17" class="form-control" placeholder="16">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i17')?.hasError('required') && bai09Form.get('i17')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Auditoria</p>
+            <div class="form-group">
+                <select type="text" formControlName="i18" class="form-control" placeholder="17">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i18')?.hasError('required') && bai09Form.get('i18')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Director de Informática/Sistemas (CIO)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i19" class="form-control" placeholder="18">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i19')?.hasError('required') && bai09Form.get('i19')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Jefe de Arquitectura del Negocio</p>
+            <div class="form-group">
+                <select type="text" formControlName="i20" class="form-control" placeholder="19">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i20')?.hasError('required') && bai09Form.get('i20')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Jefe de Desarrollo</p>
+            <div class="form-group">
+                <select type="text" formControlName="i21" class="form-control" placeholder="20">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i21')?.hasError('required') && bai09Form.get('i21')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Jefe de Operaciones TI</p>
+            <div class="form-group">
+                <select type="text" formControlName="i22" class="form-control" placeholder="21">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i22')?.hasError('required') && bai09Form.get('i22')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Jefe de Administración TI</p>
+            <div class="form-group">
+                <select type="text" formControlName="i23" class="form-control" placeholder="22">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i23')?.hasError('required') && bai09Form.get('i23')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Gestor de Servicio (Service Manager)</p>
+            <div class="form-group">
+                <select type="text" formControlName="i24" class="form-control" placeholder="23">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i24')?.hasError('required') && bai09Form.get('i24')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Gestor de Seguridad de la Información</p>
+            <div class="form-group">
+                <select type="text" formControlName="i25" class="form-control" placeholder="24">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i25')?.hasError('required') && bai09Form.get('i25')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Gestor de Continuidad de Negocio</p>
+            <div class="form-group">
+                <select type="text" formControlName="i26" class="form-control" placeholder="25">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i26')?.hasError('required') && bai09Form.get('i26')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <br>
+            <p class="li">Gestor de Privacidad de la Información</p>
+            <div class="form-group">
+                <select type="text" formControlName="i27" class="form-control" placeholder="26">
+                   <option>R</option>
+                   <option>A</option>
+                   <option>C</option>
+                   <option>I</option>
+                   <option>-</option>
+                </select>
+                <div class="validacion"
+            *ngIf="bai09Form.get('i27')?.hasError('required') && bai09Form.get('i27')?.touched">
+            <span>El 4<b> es obligatorio</b></span>
+        </div>
+            </div>
+            <div>
+                <button routerLink="/pagina163" class="btn btn-danger">Volver</button>
+                <button  type="submit" [disabled]="bai09Form.invalid" class="btn btn-success" >Aceptar</button>
+            </div>
+        </form>
+    </div>

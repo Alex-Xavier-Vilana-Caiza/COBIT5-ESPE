@@ -1,0 +1,393 @@
+<div>
+    <span class="titulo" class="d-grid gap-2 col-2  mx-auto " style="color: white; text-align: center;"  >{{title}}</span>
+    <form class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2" 
+    style="height: 10px;" style="width: 60%;" style="margin: 0 auto;"
+     [formGroup]="tablasieteForm" (ngSubmit)="agregarTablasiete()">
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group">
+            <select type="text" formControlName="BAI07" class="form-control" placeholder="BAI07">
+               <option>BAI07.01.<br> Establecer un plan de implementación.</option>
+               <option>BAI07.02.<br> Planificar la conversación de procesos de negocio, sistemas y datos.</option>
+               <option>BAI07.03.<br> Planificar pruebas de aceptación.</option>
+               <option>BAI07.04.<br> Establecer un entorno de pruebas.</option>
+               <option>BAI07.05.<br> Ejecutar pruebas de aceptación.</option>
+               <option>BAI07.06.<br> Pasar a producción y gestionar los lanzamientos.</option>
+               <option>BAI07.07.<br> Proporcionar soporte en producción desde el primer momento.</option>
+               <option>BAI07.08.<br> Ejecutar una revisión post-implementación.</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('BAI07')?.hasError('required') && tablasieteForm.get('BAI07')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="oa" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oa')?.hasError('required') && tablasieteForm.get('oa')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ob" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ob')?.hasError('required') && tablasieteForm.get('ob')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Financiero(CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="oc" class="form-control">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oc')?.hasError('required') && tablasieteForm.get('oc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Operaciones(COO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="od" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('od')?.hasError('required') && tablasieteForm.get('od')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Ejecutivos de negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="oe" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oe')?.hasError('required') && tablasieteForm.get('oe')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los procesos de negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="of" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('of')?.hasError('required') && tablasieteForm.get('of')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité Ejecutivo Estratégico</p>
+        <div class="form-group">
+            <select type="text" formControlName="og" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('og')?.hasError('required') && tablasieteForm.get('og')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité Estratégico (Desarrollo/Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="oh" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oh')?.hasError('required') && tablasieteForm.get('oh')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestión de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="oi" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oi')?.hasError('required') && tablasieteForm.get('oi')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestión del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="oj" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oj')?.hasError('required') && tablasieteForm.get('oj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ok" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ok')?.hasError('required') && tablasieteForm.get('ok')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de la Información (CISO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ol" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ol')?.hasError('required') && tablasieteForm.get('ol')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="om" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('om')?.hasError('required') && tablasieteForm.get('om')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="on" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('on')?.hasError('required') && tablasieteForm.get('on')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="oo" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oo')?.hasError('required') && tablasieteForm.get('oo')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo (Compliance)</p>
+        <div class="form-group">
+            <select type="text" formControlName="op" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('op')?.hasError('required') && tablasieteForm.get('op')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="oq" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oq')?.hasError('required') && tablasieteForm.get('oq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informática/Sistemas (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="or" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('or')?.hasError('required') && tablasieteForm.get('or')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura del Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="os" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('os')?.hasError('required') && tablasieteForm.get('os')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Desarrollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="ot" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ot')?.hasError('required') && tablasieteForm.get('ot')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="ou" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ou')?.hasError('required') && tablasieteForm.get('ou')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administración TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="ov" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ov')?.hasError('required') && tablasieteForm.get('ov')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Servicio (Service Manager)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ow" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ow')?.hasError('required') && tablasieteForm.get('ow')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Información</p>
+        <div class="form-group">
+            <select type="text" formControlName="ox" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('ox')?.hasError('required') && tablasieteForm.get('ox')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="oy" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oy')?.hasError('required') && tablasieteForm.get('oy')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Privacidad de la Información</p>
+        <div class="form-group">
+            <select type="text" formControlName="oz" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablasieteForm.get('oz')?.hasError('required') && tablasieteForm.get('oz')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <div>
+            <button routerLink="/pagina154" class="btn btn-danger">Volver</button>
+            <button type="submit" class="btn btn-success" [disabled]="tablasieteForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>

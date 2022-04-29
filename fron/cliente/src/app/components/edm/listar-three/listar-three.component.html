@@ -1,0 +1,109 @@
+<div  class="table-responsive">
+    <table *ngIf="listHead3.length > 0" >
+        <thead   >
+          <tr id="head_3">
+            <th colspan="29" class="matriz">Matriz RACI EDM03</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody >
+         
+          <tr *ngFor="let head3 of listHead3">
+            <th ><p class="gob">Practicas de Gobierno</p></th>
+            <td class="verticalText">{{ head3.xa}}</td>
+            <td class="verticalText">{{ head3.xb}}</td>
+            <td class="verticalText">{{ head3.xc}}</td>
+            <td class="verticalText">{{ head3.xd}}</td>
+            <td class="verticalText">{{ head3.xe}}</td>
+            <td class="verticalText">{{ head3.xf}}</td>
+            <td class="verticalText">{{ head3.xg}}</td>
+            <td class="verticalText">{{ head3.xh}}</td>
+            <td class="verticalText">{{ head3.xi}}</td>
+            <td class="verticalText">{{ head3.xj}}</td>
+            <td class="verticalText">{{ head3.xk}}</td>
+            <td class="verticalText">{{ head3.xl}}</td>
+            <td class="verticalText">{{ head3.xm}}</td>
+            <td class="verticalText">{{ head3.xn}}</td>
+            <td class="verticalText">{{ head3.xnn}}</td>
+            <td class="verticalText">{{ head3.xo}}</td>
+            <td class="verticalText">{{ head3.xp}}</td>
+            <td class="verticalText">{{ head3.xq}}</td>
+            <td class="verticalText">{{ head3.xr}}</td>
+            <td class="verticalText">{{ head3.xs}}</td>
+            <td class="verticalText">{{ head3.xt}}</td>
+            <td class="verticalText">{{ head3.xu}}</td>
+            <td class="verticalText">{{ head3.xv}}</td>
+            <td class="verticalText">{{ head3.xw}}</td>
+            <td class="verticalText">{{ head3.xx}}</td>
+            <td class="verticalText">{{ head3.xy}}</td>
+          
+            <td>
+              <i [routerLink]="['/editar-head3', head3._id]"  class="fa-solid fa-pen-to-square"></i>
+                <i (click)="eliminarHeads3(head3._id)" class="fa-solid fa-trash text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+  
+        <tbody>
+          <tr *ngFor="let three of listThrees">
+           
+          
+            <td class="segundo">{{ three.EDM3}}</td>
+              <td class="segundo">{{ three.pa}}</td>
+              <td class="segundo">{{ three.pb}}</td>
+              <td class="segundo">{{ three.pc}}</td>
+              <td class="segundo">{{ three.pd}}</td>
+              <td class="segundo">{{ three.pe}}</td>
+              <td class="segundo">{{ three.pf}}</td>
+              <td class="segundo">{{ three.pg}}</td>
+              <td class="segundo">{{ three.ph}}</td>
+              <td class="segundo">{{ three.pi}}</td>
+              <td class="segundo">{{ three.pj}}</td>
+              <td class="segundo">{{ three.pk}}</td>
+              <td class="segundo">{{ three.pl}}</td>
+              <td class="segundo">{{ three.pm}}</td>
+              <td class="segundo">{{ three.pn}}</td>
+              <td class="segundo">{{ three.pnn}}</td>
+              <td class="segundo">{{ three.po}}</td>
+              <td class="segundo">{{ three.pp}}</td>
+              <td class="segundo">{{ three.pq}}</td>
+              <td class="segundo">{{ three.pr}}</td>
+              <td class="segundo">{{ three.ps}}</td>
+              <td class="segundo">{{ three.pt}}</td>
+              <td class="segundo">{{ three.pu}}</td>
+              <td class="segundo">{{ three.pv}}</td>
+              <td class="segundo">{{ three.pw}}</td>
+              <td class="segundo">{{ three.px}}</td>
+              <td class="segundo">{{ three.py}}</td>
+              <td>
+                <i  [routerLink]="['/editar-three', three._id]"  class="fa-solid fa-pen-to-square"></i>
+                <i routerLink="/listar-three" (click)="eliminarThree(three._id)" class="fa-solid fa-trash text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+      </table>
+      <h5 *ngIf="listThrees.length == 0" >No hay Matriz para mostrar</h5>
+  </div>
+  <br>
+  <br>
+  
+  <button routerLink="/crear-three" class="btn btn-success">Nueva Casilla</button>
+  
+  <br>
+  <br>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="edm02tabla1">EDM02</a></li>
+      <li class="page-item"><a class="page-link" href="edm03tabla1">1</a></li>
+      <li class="page-item"><a class="page-link" href="listar-three">2</a></li>
+      <li class="page-item"><a class="page-link" href="edm03tabla3">3</a></li>
+      <li class="page-item"><a class="page-link" href="edm03tabla4">4</a></li>
+      <li class="page-item"><a class="page-link" href="edm03tabla5">5</a></li>
+      <li class="page-item"><a class="page-link" href="edm03tabla3">Next</a></li>
+      
+    </ul>
+  </nav><br>

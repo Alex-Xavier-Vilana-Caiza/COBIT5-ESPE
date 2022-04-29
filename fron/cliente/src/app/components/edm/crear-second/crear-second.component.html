@@ -1,0 +1,388 @@
+<div>
+    <span>{{title}}</span>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-5 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;" 
+    [formGroup]="secondForm" (ngSubmit)="agregarSecond()" >
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group">
+            <select type="text" formControlName="EDM" class="form-control" placeholder="EDM">
+                <option>EDM02.01.<br> Evaluar la optimizacion del valor</option>
+               <option>EDM02.02.<br> Orientar la optimizacion del valor</option>
+               <option>EDM02.03.<br> Supervisar la optimizacion del valor</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('EDM')?.hasError('required') && secondForm.get('EDM')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 1</p>
+        <div class="form-group">
+            <select type="text" formControlName="ma" class="form-control" placeholder="ma">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('ma')?.hasError('required') && secondForm.get('ma')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 2</p>
+        <div class="form-group">
+            <select type="text" formControlName="mb" class="form-control" placeholder="mb">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mb')?.hasError('required') && secondForm.get('mb')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 3</p>
+        <div class="form-group">
+            <select type="text" formControlName="mc" class="form-control" placeholder="mc">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mc')?.hasError('required') && secondForm.get('mc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 4</p>
+        <div class="form-group">
+            <select type="text" formControlName="md" class="form-control" placeholder="md">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('md')?.hasError('required') && secondForm.get('md')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">espacio 5</p>
+        <div class="form-group">
+            <select type="text" formControlName="me" class="form-control" placeholder="me">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('me')?.hasError('required') && secondForm.get('me')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 6</p>
+        <div class="form-group">
+            <select type="text" formControlName="mf" class="form-control" placeholder="mf">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mf')?.hasError('required') && secondForm.get('mf')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 7</p>
+        <div class="form-group">
+            <select type="text" formControlName="mg" class="form-control" placeholder="mg">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mg')?.hasError('required') && secondForm.get('mg')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">espacio 8</p>
+        <div class="form-group">
+            <select type="text" formControlName="mh" class="form-control" placeholder="mh">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mh')?.hasError('required') && secondForm.get('mh')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 9</p>
+        <div class="form-group">
+            <select type="text" formControlName="mi" class="form-control" placeholder="mi">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mi')?.hasError('required') && secondForm.get('mi')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 10</p>
+        <div class="form-group">
+            <select type="text" formControlName="mj" class="form-control" placeholder="mj">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mj')?.hasError('required') && secondForm.get('mj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">espacio 11</p>
+        <div class="form-group">
+            <select type="text" formControlName="mk" class="form-control" placeholder="mk">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mk')?.hasError('required') && secondForm.get('mk')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 12</p>
+        <div class="form-group">
+            <select type="text" formControlName="ml" class="form-control" placeholder="ml">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('ml')?.hasError('required') && secondForm.get('ml')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 13</p>
+        <div class="form-group">
+            <select type="text" formControlName="mm" class="form-control" placeholder="mm">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mm')?.hasError('required') && secondForm.get('mm')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">espacio 14</p>
+        <div class="form-group">
+            <select type="text" formControlName="mn" class="form-control" placeholder="mn">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mn')?.hasError('required') && secondForm.get('mn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 15</p>
+        <div class="form-group">
+            <select type="text" formControlName="mnn" class="form-control" placeholder="mnn">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mnn')?.hasError('required') && secondForm.get('mnn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 16</p>
+        <div class="form-group">
+            <select type="text" formControlName="mo" class="form-control" placeholder="mo">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mo')?.hasError('required') && secondForm.get('mo')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">espacio 17</p>
+        <div class="form-group">
+            <select type="text" formControlName="mp" class="form-control" placeholder="mp">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mp')?.hasError('required') && secondForm.get('mp')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 18</p>
+        <div class="form-group">
+            <select type="text" formControlName="mq" class="form-control" placeholder="mq">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mq')?.hasError('required') && secondForm.get('mq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 19</p>
+        <div class="form-group">
+            <select type="text" formControlName="mr" class="form-control" placeholder="mr">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mr')?.hasError('required') && secondForm.get('mr')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">espacio 20</p>
+        <div class="form-group">
+            <select type="text" formControlName="ms" class="form-control" placeholder="ms">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('ms')?.hasError('required') && secondForm.get('ms')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 21</p>
+        <div class="form-group">
+            <select type="text" formControlName="mt" class="form-control" placeholder="mt">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mt')?.hasError('required') && secondForm.get('mt')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 22</p>
+        <div class="form-group">
+            <select type="text" formControlName="mu" class="form-control" placeholder="mu">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mu')?.hasError('required') && secondForm.get('mu')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">espacio 23</p>
+        <div class="form-group">
+            <select type="text" formControlName="mv" class="form-control" placeholder="mv">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mv')?.hasError('required') && secondForm.get('mv')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 24</p>
+        <div class="form-group">
+            <select type="text" formControlName="mw" class="form-control" placeholder="mw">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mw')?.hasError('required') && secondForm.get('mw')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">espacio 25</p>
+        <div class="form-group">
+            <select type="text" formControlName="mx" class="form-control" placeholder="mx">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('mx')?.hasError('required') && secondForm.get('mx')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">espacio 26</p>
+        <div class="form-group">
+            <select type="text" formControlName="my" class="form-control" placeholder="my">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="secondForm.get('my')?.hasError('required') && secondForm.get('my')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/listar-second" class="btn btn-danger">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-success" [disabled]="secondForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>

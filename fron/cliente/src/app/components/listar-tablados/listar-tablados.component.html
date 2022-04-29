@@ -1,0 +1,112 @@
+<div class="table-responsive" >
+    <table *ngIf="listTablados.length > 0" class="table  table-hover  " class="container" style="width: 87%;">
+        <thead>
+          <tr>
+            <th colspan="50" class="matriz">Matriz RACI MEA03</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody>
+          <tr *ngFor="let cabecerados of listCabecerados" class="segundoo">
+            
+            <th class="align">Practica clave de gobierno</th>
+            <th class="verticalText">{{ cabecerados.dosa}}</th>
+            <th class="verticalText">{{ cabecerados.dosb}}</th>
+            <th class="verticalText">{{ cabecerados.dosc}}</th>
+            <th class="verticalText">{{ cabecerados.dosd}}</th>
+            <th class="verticalText">{{ cabecerados.dose}}</th>
+            <th class="verticalText">{{ cabecerados.dosf}}</th>
+            <th class="verticalText">{{ cabecerados.dosg}}</th>
+            <th class="verticalText">{{ cabecerados.dosh}}</th>
+            <th class="verticalText">{{ cabecerados.dosi}}</th>
+            <th class="verticalText">{{ cabecerados.dosj}}</th>
+            <th class="verticalText">{{ cabecerados.dosk}}</th>
+            <th class="verticalText">{{ cabecerados.dosl}}</th>
+            <th class="verticalText">{{ cabecerados.dosm}}</th>
+            <th class="verticalText">{{ cabecerados.dosn}}</th>
+            <th class="verticalText">{{ cabecerados.doso}}</th>
+            <th class="verticalText">{{ cabecerados.dosp}}</th>
+            <th class="verticalText">{{ cabecerados.dosq}}</th>
+            <th class="verticalText">{{ cabecerados.dosr}}</th>
+            <th class="verticalText">{{ cabecerados.doss}}</th>
+            <th class="verticalText">{{ cabecerados.dost}}</th>
+            <th class="verticalText">{{ cabecerados.dosu}}</th>
+            <th class="verticalText">{{ cabecerados.dosv}}</th>
+            <th class="verticalText">{{ cabecerados.dosw}}</th>
+            <th class="verticalText">{{ cabecerados.dosx}}</th>
+            <th class="verticalText">{{ cabecerados.dosy}}</th>
+            <th class="verticalText">{{ cabecerados.dosz}}</th>
+          
+          
+            <th>
+                <i [routerLink]="['/editar-cabecerados', cabecerados._id]" class="fa-solid fa-pen-to-square ed"></i>
+                <i (click)=" eliminarCabecerados(cabecerados._id)" class="fa-solid fa-trash el"></i>
+            </th>
+          </tr>
+        </tbody>
+  
+  
+        <tbody>
+          <tr *ngFor="let tablados of listTablados" class="segundoo">
+           
+            <th routerLink="/" class="sel">{{ tablados.aab}}</th>
+            <td>{{ tablados.ab}}</td>
+            <td>{{ tablados.bb}}</td>
+            <td>{{ tablados.cb}}</td>
+            <td>{{ tablados.db }}</td>
+            <td>{{ tablados.eb }}</td>
+            <td>{{ tablados.fb }}</td>
+            <td>{{ tablados.gb }}</td>
+            <td>{{ tablados.hb }}</td>
+            <td>{{ tablados.ib }}</td>
+            <td>{{ tablados.jb }}</td>
+            <td>{{ tablados.kb }}</td>
+            <td>{{ tablados.lb }}</td>
+            <td>{{ tablados.mb }}</td>
+            <td>{{ tablados.nb }}</td>
+            <td>{{ tablados.ob }}</td>
+            <td>{{ tablados.pb }}</td>
+            <td>{{ tablados.qb }}</td>
+            <td>{{ tablados.rb }}</td>
+            <td>{{ tablados.sb }}</td>
+            <td>{{ tablados.tb }}</td>
+            <td>{{ tablados.ub }}</td>
+            <td>{{ tablados.vb }}</td>
+            <td>{{ tablados.wb }}</td>
+            <td>{{ tablados.xb }}</td>
+            <td>{{ tablados.yb }}</td>
+            <td>{{ tablados.zb }}</td>
+          
+          
+            <td>
+                <i [routerLink]="['/editar-tablados', tablados._id]" class="fa-solid fa-pen-to-square ed"></i>
+                <i (click)="eliminarTablados(tablados._id)" class="fa-solid fa-trash el"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+        
+        
+    
+      </table>
+      <h5 *ngIf="listTablados.length == 0" >No hay productos para mostrar</h5>
+    <br>
+
+  <div >
+    <button routerLink="/crear-tablados" class="btn btn-success" type="button">Crear Tabla<i class="bi bi-stack nuevo"></i></button>
+    <button routerLink="/crear-cabecerados" class="btn btn-danger">Nueva Cabecera</button>
+  </div><br>
+</div>
+
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="meao3tabla1">1</a></li>
+      <li class="page-item"><a class="page-link" href="listar-tablados">Tabla RACI</a></li>
+      <li class="page-item"><a class="page-link" href="meao3tabla3">2</a></li>
+      <li class="page-item"><a class="page-link" href="meao3tabla4">3</a></li>
+      <li class="page-item"><a class="page-link" href="/">Regresar al MENU</a></li>
+      
+    </ul>
+  </nav><br>

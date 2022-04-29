@@ -1,0 +1,243 @@
+<span class="titulo" class="d-grid gap-2 col-2  mx-auto " style="color: white; text-align: center;" >{{ titulo | uppercase}}</span>
+<form class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2"
+style="height: 10px;" style="width: 60%;" style="margin: 35px   190px; border-radius: 10px;"
+ [formGroup]="cabecera6Form" class="container bg-light bc row row-cols-1 row-cols-lg-4 g-1 g-lg-2"   style="margin: 0 auto; width: 78%;" (ngSubmit)="agregarCabecera6()">
+   
+    <div class="form-group">
+        <input type="text" formControlName="mma" (ngSubmit)="agregarCabecera6()"
+        class="form-control" placeholder="mma" style="width: 365px;" size="32">  
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mma')?.hasError('required') && cabecera6Form.get('mma')?.touched">
+            <span>mma<b> es obligatoria</b></span>
+        </div>  
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmb"
+        class="form-control" placeholder="mmb" style="width: 365px;" size="32"> 
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmb')?.hasError('required') && cabecera6Form.get('mmb')?.touched">
+            <span>mmb<b> es obligatoria</b></span>
+        </div>   
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmc"
+        class="form-control" placeholder="mmc" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmc')?.hasError('required') && cabecera6Form.get('mmc')?.touched">
+            <span>mmc<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmd"
+        class="form-control" placeholder="mmd" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmd')?.hasError('required') && cabecera6Form.get('mmd')?.touched">
+            <span>mmd<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mme"
+        class="form-control" placeholder="mme" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mme')?.hasError('required') && cabecera6Form.get('mme')?.touched">
+            <span>mme<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmf"
+        class="form-control" placeholder="mmf" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmf')?.hasError('required') && cabecera6Form.get('mmf')?.touched">
+            <span>mmf<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmg"
+        class="form-control" placeholder="mmg" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmg')?.hasError('required') && cabecera6Form.get('mmg')?.touched">
+            <span>mmg<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmh"
+        class="form-control" placeholder="mmh" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmh')?.hasError('required') && cabecera6Form.get('mmh')?.touched">
+            <span>mmh<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmi"
+        class="form-control" placeholder="mmi" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmi')?.hasError('required') && cabecera6Form.get('mmi')?.touched">
+            <span>mmi<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmj"
+        class="form-control" placeholder="mmj" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmj')?.hasError('required') && cabecera6Form.get('mmj')?.touched">
+            <span>mmj<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmk"
+        class="form-control" placeholder="mmk" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmk')?.hasError('required') && cabecera6Form.get('mmk')?.touched">
+            <span>mmk<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mml"
+        class="form-control" placeholder="mml" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mml')?.hasError('required') && cabecera6Form.get('mml')?.touched">
+            <span>mml<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmm"
+        class="form-control" placeholder="mmm" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmm')?.hasError('required') && cabecera6Form.get('mmm')?.touched">
+            <span>mmm<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmn"
+        class="form-control" placeholder="mmn" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmn')?.hasError('required') && cabecera6Form.get('mmn')?.touched">
+            <span>mmn<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmo"
+        class="form-control" placeholder="mmo" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmo')?.hasError('required') && cabecera6Form.get('mmo')?.touched">
+            <span>mmo<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmp"
+        class="form-control" placeholder="mmp" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmp')?.hasError('required') && cabecera6Form.get('mmp')?.touched">
+            <span>mmp<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmq"
+        class="form-control" placeholder="mmq" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmq')?.hasError('required') && cabecera6Form.get('mmq')?.touched">
+            <span>mmq<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmr"
+        class="form-control" placeholder="mmr" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmr')?.hasError('required') && cabecera6Form.get('mmr')?.touched">
+            <span>mmr<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mms"
+        class="form-control" placeholder="mms" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mms')?.hasError('required') && cabecera6Form.get('mms')?.touched">
+            <span>mms<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmt"
+        class="form-control" placeholder="mmt" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmt')?.hasError('required') && cabecera6Form.get('mmt')?.touched">
+            <span>mmt<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmu"
+        class="form-control" placeholder="mmu" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmu')?.hasError('required') && cabecera6Form.get('mmu')?.touched">
+            <span>mmu<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmv"
+        class="form-control" placeholder="mmv" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmv')?.hasError('required') && cabecera6Form.get('mmv')?.touched">
+            <span>mmv<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmw"
+        class="form-control" placeholder="mmw" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmw')?.hasError('required') && cabecera6Form.get('mmw')?.touched">
+            <span>mmw<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmx"
+        class="form-control" placeholder="mmx" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmx')?.hasError('required') && cabecera6Form.get('mmx')?.touched">
+            <span>mmx<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmy"
+        class="form-control" placeholder="mmy" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmy')?.hasError('required') && cabecera6Form.get('mmy')?.touched">
+            <span>mmy<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <p id="formulario"></p>
+    <div class="form-group">
+        <input type="text" formControlName="mmz"
+        class="form-control" placeholder="mmz" style="width: 365px;" size="32">   
+        <div class="validacion"
+            *ngIf="cabecera6Form.get('mmz')?.hasError('required') && cabecera6Form.get('mmz')?.touched">
+            <span>mmz<b> es obligatorio</b></span>
+        </div> 
+    </div>
+    <div class="ji"><br><br><br>
+        <button class="btn btn-secondary" routerLink="/pagina149">Volver</button>
+        <button class="btn btn-success" type="submit" [disabled]="cabecera6Form.invalid" >Aceptar</button>
+    </div>
+</form>

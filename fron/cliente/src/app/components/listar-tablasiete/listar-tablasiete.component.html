@@ -1,0 +1,91 @@
+<div  class="table-responsive">
+    <table *ngIf="listCabecera7.length >0" class="table table-striped" class="container" >
+        <thead>
+          <tr id="Cabecera_1">
+            <th  colspan="50"  class="matriz">Matriz RACI BAI07</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+        <tbody >       
+          <tr *ngFor="let cabecera7 of listCabecera7" class="segundoo">
+            <th class="align">Practicas de Gobierno</th>
+            <th class="verticalText">{{ cabecera7.dda}}</th>
+            <th class="verticalText">{{ cabecera7.ddb}}</th>
+            <th class="verticalText">{{ cabecera7.ddc}}</th>
+            <th class="verticalText">{{ cabecera7.ddd}}</th>
+            <th class="verticalText">{{ cabecera7.dde}}</th>
+            <th class="verticalText">{{ cabecera7.ddf}}</th>
+            <th class="verticalText">{{ cabecera7.ddg}}</th>
+            <th class="verticalText">{{ cabecera7.ddh}}</th>
+            <th class="verticalText">{{ cabecera7.ddi}}</th>
+            <th class="verticalText">{{ cabecera7.ddj}}</th>
+            <th class="verticalText">{{ cabecera7.ddk}}</th>
+            <th class="verticalText">{{ cabecera7.ddl}}</th>
+            <th class="verticalText">{{ cabecera7.ddm}}</th>
+            <th class="verticalText">{{ cabecera7.ddn}}</th>
+            <th class="verticalText">{{ cabecera7.ddo}}</th>
+            <th class="verticalText">{{ cabecera7.ddp}}</th>
+            <th class="verticalText">{{ cabecera7.ddq}}</th>
+            <th class="verticalText">{{ cabecera7.ddr}}</th>
+            <th class="verticalText">{{ cabecera7.dds}}</th>
+            <th class="verticalText">{{ cabecera7.ddt}}</th>
+            <th class="verticalText">{{ cabecera7.ddu}}</th>
+            <th class="verticalText">{{ cabecera7.ddv}}</th>
+            <th class="verticalText">{{ cabecera7.ddw}}</th>
+            <th class="verticalText">{{ cabecera7.ddx}}</th>
+            <th class="verticalText">{{ cabecera7.ddy}}</th>
+            <th class="verticalText">{{ cabecera7.ddz}}</th>        
+            <td>
+              <i [routerLink]="['/editar-cabecera7', cabecera7._id]"  class="fa-solid fa-pen-to-square ed"></i>
+              <i (click)="eliminarCabecera7(cabecera7._id)" class="fa-solid fa-trash el"></i>  
+            </td>
+          </tr>
+        </tbody>
+  
+        <tbody>
+          <tr *ngFor="let tablasiete of listTablasietes" class="segundoo">         
+          
+            <th class="sel">{{ tablasiete.BAI07}}</th>
+              <td>{{ tablasiete.oa}}</td>
+              <td>{{ tablasiete.ob}}</td>
+              <td>{{ tablasiete.oc}}</td>
+              <td>{{ tablasiete.od}}</td>
+              <td>{{ tablasiete.oe}}</td>
+              <td>{{ tablasiete.of}}</td>
+              <td>{{ tablasiete.og}}</td>
+              <td>{{ tablasiete.oh}}</td>
+              <td>{{ tablasiete.oi}}</td>
+              <td>{{ tablasiete.oj}}</td>
+              <td>{{ tablasiete.ok}}</td>
+              <td>{{ tablasiete.ol}}</td>
+              <td>{{ tablasiete.om}}</td>
+              <td>{{ tablasiete.on}}</td>
+              <td>{{ tablasiete.oo}}</td>
+              <td>{{ tablasiete.op}}</td>
+              <td>{{ tablasiete.oq}}</td>
+              <td>{{ tablasiete.or}}</td>
+              <td>{{ tablasiete.os}}</td>
+              <td>{{ tablasiete.ot}}</td>
+              <td>{{ tablasiete.ou}}</td>
+              <td>{{ tablasiete.ov}}</td>
+              <td>{{ tablasiete.ow}}</td>
+              <td>{{ tablasiete.ox}}</td>
+              <td>{{ tablasiete.oy}}</td>
+              <td>{{ tablasiete.oz}}</td>
+              <td>
+                <i [routerLink]="['/editar-tablasiete', tablasiete._id]"  class="fa-solid fa-pen-to-square ed"></i>
+                <i (click)="eliminarTablasiete(tablasiete._id)" class="fa-solid fa-trash el"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 *ngIf="listTablasietes.length == 0" >No hay Matriz para mostrar</h5>
+  </div>
+  <br>
+  <div class="d-grid gap-1 col-3 mx-auto  d-grid gap-1 d-md-block">
+    <button routerLink="/crear-tablasiete" class="btn btn-success" type="button">Crear Tabla<i class="bi bi-stack nuevo"></i></button>
+    <!-- <button routerLink="/crear-cabecera7" class="btn btn-primary" type="button">Crear Cabecera</button> -->
+</div><br>
+  <br>
+  

@@ -1,0 +1,390 @@
+<div>
+    <span class="titulo" class="d-grid gap-2 col-2  mx-auto " style="color: white; text-align: center;" >{{title}}</span>
+    <form class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 0 auto;"
+     [formGroup]="tablaochoForm" (ngSubmit)="agregarTablaocho()">
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group">
+            <select type="text" formControlName="BAI08" class="form-control" placeholder="BAI08">
+               <option>BAI08.01.<br> Cultivar y facilitar una cultura de intercambio de conocimientos.</option>
+               <option>BAI08.02.<br> Identificar y clasificar las fuentes de informaciòn.</option>
+               <option>BAI08.03.<br> Organizar y contextualizar la informacion transformandola en Conocimientoon>
+               <option>BAI08.04.<br> Utilizar y compartir el conocimiento.</option>
+               <option>BAI08.05.<br> Evaluar y retirar la informacion.</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('BAI08')?.hasError('required') && tablaochoForm.get('BAI08')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="ca" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('ca')?.hasError('required') && tablaochoForm.get('ca')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cb" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cb')?.hasError('required') && tablaochoForm.get('cb')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Financiero(CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cc" class="form-control">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cc')?.hasError('required') && tablaochoForm.get('cc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Operaciones(COO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cd" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cd')?.hasError('required') && tablaochoForm.get('cd')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Ejecutivos de negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="ce" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('ce')?.hasError('required') && tablaochoForm.get('ce')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los procesos de negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="cf" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cf')?.hasError('required') && tablaochoForm.get('cf')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité Ejecutivo Estratégico</p>
+        <div class="form-group">
+            <select type="text" formControlName="cg" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cg')?.hasError('required') && tablaochoForm.get('cg')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité Estratégico (Desarrollo/Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ch" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('ch')?.hasError('required') && tablaochoForm.get('ch')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestión de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="ci" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('ci')?.hasError('required') && tablaochoForm.get('ci')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestión del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="cj" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cj')?.hasError('required') && tablaochoForm.get('cj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="ck" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('ck')?.hasError('required') && tablaochoForm.get('ck')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de la Información (CISO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cl" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cl')?.hasError('required') && tablaochoForm.get('cl')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="cm" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cm')?.hasError('required') && tablaochoForm.get('cm')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="cn" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cn')?.hasError('required') && tablaochoForm.get('cn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="co" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('co')?.hasError('required') && tablaochoForm.get('co')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo (Compliance)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cp" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cp')?.hasError('required') && tablaochoForm.get('cp')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="cq" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cq')?.hasError('required') && tablaochoForm.get('cq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informática/Sistemas (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cr" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cr')?.hasError('required') && tablaochoForm.get('cr')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura del Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="cs" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cs')?.hasError('required') && tablaochoForm.get('cs')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Desarrollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="ct" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('ct')?.hasError('required') && tablaochoForm.get('ct')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="cu" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cu')?.hasError('required') && tablaochoForm.get('cu')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administración TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="cv" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cv')?.hasError('required') && tablaochoForm.get('cv')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Servicio (Service Manager)</p>
+        <div class="form-group">
+            <select type="text" formControlName="cw" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cw')?.hasError('required') && tablaochoForm.get('cw')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Información</p>
+        <div class="form-group">
+            <select type="text" formControlName="cx" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cx')?.hasError('required') && tablaochoForm.get('cx')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="cy" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cy')?.hasError('required') && tablaochoForm.get('cy')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Privacidad de la Información</p>
+        <div class="form-group">
+            <select type="text" formControlName="cz" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaochoForm.get('cz')?.hasError('required') && tablaochoForm.get('cz')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <div>
+            <button routerLink="/pagina159" class="btn btn-danger">Volver</button>
+            <button type="submit" class="btn btn-success" [disabled]="tablaochoForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>

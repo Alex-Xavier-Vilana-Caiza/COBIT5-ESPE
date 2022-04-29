@@ -1,0 +1,93 @@
+
+<div class="table-responsive">
+    <table *ngIf="listCabecera8.length >0" class="table table-striped" class="container" >
+        <thead>
+          <tr id="Cabecera_1">
+            <th  colspan="50"  class="matriz">Matriz RACI BAI08</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+        <tbody >       
+          <tr *ngFor="let cabecera8 of listCabecera8" class="segundoo">
+            <th class="align">Practicas de Gobierno</th>
+            <th class="verticalText">{{ cabecera8.maa}}</th>
+            <th class="verticalText">{{ cabecera8.mab}}</th>
+            <th class="verticalText">{{ cabecera8.mac}}</th>
+            <th class="verticalText">{{ cabecera8.mad}}</th>
+            <th class="verticalText">{{ cabecera8.mae}}</th>
+            <th class="verticalText">{{ cabecera8.maf}}</th>
+            <th class="verticalText">{{ cabecera8.mag}}</th>
+            <th class="verticalText">{{ cabecera8.mah}}</th>
+            <th class="verticalText">{{ cabecera8.mai}}</th>
+            <th class="verticalText">{{ cabecera8.maj}}</th>
+            <th class="verticalText">{{ cabecera8.mak}}</th>
+            <th class="verticalText">{{ cabecera8.mal}}</th>
+            <th class="verticalText">{{ cabecera8.mam}}</th>
+            <th class="verticalText">{{ cabecera8.man}}</th>
+            <th class="verticalText">{{ cabecera8.mao}}</th>
+            <th class="verticalText">{{ cabecera8.map}}</th>
+            <th class="verticalText">{{ cabecera8.maq}}</th>
+            <th class="verticalText">{{ cabecera8.mar}}</th>
+            <th class="verticalText">{{ cabecera8.mas}}</th>
+            <th class="verticalText">{{ cabecera8.mat}}</th>
+            <th class="verticalText">{{ cabecera8.mau}}</th>
+            <th class="verticalText">{{ cabecera8.mav}}</th>
+            <th class="verticalText">{{ cabecera8.maw}}</th>
+            <th class="verticalText">{{ cabecera8.max}}</th>
+            <th class="verticalText">{{ cabecera8.may}}</th>
+            <th class="verticalText">{{ cabecera8.maz}}</th>        
+            <td>
+              <i [routerLink]="['/editar-cabecera8', cabecera8._id]"  class="fa-solid fa-pen-to-square ed"></i>
+              <i (click)="eliminarCabecera8(cabecera8._id)" class="fa-solid fa-trash el"></i>
+  
+            </td>
+          </tr>
+        </tbody>
+  
+        <tbody>
+          <tr *ngFor="let tablaocho of listTablaochos" class="segundoo">         
+          
+            <th class="sel">{{ tablaocho.BAI08}}</th>
+              <td>{{ tablaocho.ca}}</td>
+              <td>{{ tablaocho.cb}}</td>
+              <td>{{ tablaocho.cc}}</td>
+              <td>{{ tablaocho.cd}}</td>
+              <td>{{ tablaocho.ce}}</td>
+              <td>{{ tablaocho.cf}}</td>
+              <td>{{ tablaocho.cg}}</td>
+              <td>{{ tablaocho.ch}}</td>
+              <td>{{ tablaocho.ci}}</td>
+              <td>{{ tablaocho.cj}}</td>
+              <td>{{ tablaocho.ck}}</td>
+              <td>{{ tablaocho.cl}}</td>
+              <td>{{ tablaocho.cm}}</td>
+              <td>{{ tablaocho.cn}}</td>
+              <td>{{ tablaocho.co}}</td>
+              <td>{{ tablaocho.cp}}</td>
+              <td>{{ tablaocho.cq}}</td>
+              <td>{{ tablaocho.cr}}</td>
+              <td>{{ tablaocho.cs}}</td>
+              <td>{{ tablaocho.ct}}</td>
+              <td>{{ tablaocho.cu}}</td>
+              <td>{{ tablaocho.cv}}</td>
+              <td>{{ tablaocho.cw}}</td>
+              <td>{{ tablaocho.cx}}</td>
+              <td>{{ tablaocho.cy}}</td>
+              <td>{{ tablaocho.cz}}</td>
+              <td>
+                <i [routerLink]="['/editar-tablaocho', tablaocho._id]"  class="fa-solid fa-pen-to-square ed"></i>
+                <i (click)="eliminarTablaocho(tablaocho._id)" class="fa-solid fa-trash el"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 *ngIf="listTablaochos.length == 0" >No hay Matriz para mostrar</h5>
+  </div>
+  <div class="d-grid gap-1 col-3 mx-auto  d-grid gap-1 d-md-block">
+    <button routerLink="/crear-tablaocho" class="btn btn-success" type="button">Crear Tabla<i class="bi bi-stack nuevo"></i></button>
+    <!-- <button routerLink="/crear-cabecera8" class="btn btn-primary" type="button">Crear Cabecera8</button> -->
+</div>
+  <br><br>
+  <br>
+  

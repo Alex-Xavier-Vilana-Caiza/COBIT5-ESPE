@@ -1,0 +1,109 @@
+<div class="table-responsive">
+    <table *ngIf="listCabecera1.length >0"  class="container">
+        <thead>
+          <tr id="Cabecera_1">
+            <th  colspan="50"  class="matriz">Matriz RACI BAI01</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody >
+         
+          <tr *ngFor="let cabecera1 of listCabecera1" class="segundoo">
+            <th class="align">Practicas de Gobierno</th>
+            <th class="verticalText">{{ cabecera1.ja}}</th>
+            <th class="verticalText">{{ cabecera1.jb}}</th>
+            <th class="verticalText">{{ cabecera1.jc}}</th>
+            <th class="verticalText">{{ cabecera1.jd}}</th>
+            <th class="verticalText">{{ cabecera1.je}}</th>
+            <th class="verticalText">{{ cabecera1.jf}}</th>
+            <th class="verticalText">{{ cabecera1.jg}}</th>
+            <th class="verticalText">{{ cabecera1.jh}}</th>
+            <th class="verticalText">{{ cabecera1.ji}}</th>
+            <th class="verticalText">{{ cabecera1.jj}}</th>
+            <th class="verticalText">{{ cabecera1.jk}}</th>
+            <th class="verticalText">{{ cabecera1.jl}}</th>
+            <th class="verticalText">{{ cabecera1.jm}}</th>
+            <th class="verticalText">{{ cabecera1.jn}}</th>
+            <th class="verticalText">{{ cabecera1.jo}}</th>
+            <th class="verticalText">{{ cabecera1.jp}}</th>
+            <th class="verticalText">{{ cabecera1.jq}}</th>
+            <th class="verticalText">{{ cabecera1.jr}}</th>
+            <th class="verticalText">{{ cabecera1.js}}</th>
+            <th class="verticalText">{{ cabecera1.jt}}</th>
+            <th class="verticalText">{{ cabecera1.ju}}</th>
+            <th class="verticalText">{{ cabecera1.jv}}</th>
+            <th class="verticalText">{{ cabecera1.jw}}</th>
+            <th class="verticalText">{{ cabecera1.jx}}</th>
+            <th class="verticalText">{{ cabecera1.jy}}</th>
+            <th class="verticalText">{{ cabecera1.jz}}</th>       
+            <td>
+              <i [routerLink]="['/editar-cabecera1', cabecera1._id]"  class="fa-solid fa-pen-to-square ed"></i>
+              <!-- <i (click)="eliminarCabecera1(cabecera1._id)" class="fa-solid fa-trash el"></i> -->
+            </td>
+          </tr>
+        </tbody>
+  
+  
+        <tbody>
+          <tr *ngFor="let tablauno of listTablaunos" class="segundoo">         
+          
+            <th class="sel">{{ tablauno.BAI}}</th>
+              <td >{{ tablauno.na}}</td>
+              <td >{{ tablauno.nb}}</td>
+              <td >{{ tablauno.nc}}</td>
+              <td >{{ tablauno.nd}}</td>
+              <td >{{ tablauno.ne}}</td>
+              <td >{{ tablauno.nf}}</td>
+              <td >{{ tablauno.ng}}</td>
+              <td >{{ tablauno.nh}}</td>
+              <td >{{ tablauno.ni}}</td>
+              <td >{{ tablauno.nj}}</td>
+              <td >{{ tablauno.nk}}</td>
+              <td >{{ tablauno.nl}}</td>
+              <td >{{ tablauno.nm}}</td>
+              <td >{{ tablauno.nn}}</td>
+              <td >{{ tablauno.no}}</td>
+              <td >{{ tablauno.np}}</td>
+              <td >{{ tablauno.nq}}</td>
+              <td >{{ tablauno.nr}}</td>
+              <td >{{ tablauno.ns}}</td>
+              <td >{{ tablauno.nt}}</td>
+              <td >{{ tablauno.nu}}</td>
+              <td >{{ tablauno.nv}}</td>
+              <td >{{ tablauno.nw}}</td>
+              <td >{{ tablauno.nx}}</td>
+              <td >{{ tablauno.ny}}</td>
+              <td >{{ tablauno.nz}}</td>
+              <td>
+                <i [routerLink]="['/editar-tablauno', tablauno._id]"  class="fa-solid fa-pen-to-square ed"></i>
+                <i (click)="eliminarTablauno(tablauno._id)" class="fa-solid fa-trash el"></i>
+                
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        <h5 *ngIf="listTablaunos.length == 0" >No hay Matriz para mostrar</h5>
+</div>
+<div class="d-grid gap-1 col-3 mx-auto  d-grid gap-1 d-md-block">
+  <button routerLink="/crear-tablauno" class="btn btn-success" type="button">Crear Tabla<i class="bi bi-stack nuevo"></i></button>
+  <!-- <button routerLink="/crear-cabecera1" class="btn btn-primary" type="button">Crear Cabecera1</button> -->
+</div>
+  <br><br>
+  <br>
+<nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="/pagina119" >BAI01 </a></li>
+      <li class="page-item"><a class="page-link" routerLink="/listar-tablauno">1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina121" >2</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina122" >3</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina123" >4</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina124" >5</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina125" >6</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina126" >7</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina127" >8</a></li>
+      <li class="page-item"><a class="page-link" href="pagina129">Continua BAIO02</a></li>
+      
+    </ul>
+</nav><br>

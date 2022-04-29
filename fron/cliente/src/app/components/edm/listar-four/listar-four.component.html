@@ -1,0 +1,109 @@
+<div  class="table-responsive">
+    <table *ngIf="listHead4.length > 0" >
+        <thead   >
+          <tr id="head_4">
+            <th colspan="29" class="matriz">Matriz RACI EDM04</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody >
+         
+          <tr *ngFor="let head4 of listHead4">
+            <th ><p class="gob">Practicas de Gobierno</p></th>
+            <td class="verticalText">{{ head4.la}}</td>
+            <td class="verticalText">{{ head4.lb}}</td>
+            <td class="verticalText">{{ head4.lc}}</td>
+            <td class="verticalText">{{ head4.ld}}</td>
+            <td class="verticalText">{{ head4.le}}</td>
+            <td class="verticalText">{{ head4.lf}}</td>
+            <td class="verticalText">{{ head4.lg}}</td>
+            <td class="verticalText">{{ head4.lh}}</td>
+            <td class="verticalText">{{ head4.li}}</td>
+            <td class="verticalText">{{ head4.lj}}</td>
+            <td class="verticalText">{{ head4.lk}}</td>
+            <td class="verticalText">{{ head4.ll}}</td>
+            <td class="verticalText">{{ head4.lm}}</td>
+            <td class="verticalText">{{ head4.ln}}</td>
+            <td class="verticalText">{{ head4.lnn}}</td>
+            <td class="verticalText">{{ head4.lo}}</td>
+            <td class="verticalText">{{ head4.lp}}</td>
+            <td class="verticalText">{{ head4.lq}}</td>
+            <td class="verticalText">{{ head4.lr}}</td>
+            <td class="verticalText">{{ head4.ls}}</td>
+            <td class="verticalText">{{ head4.lt}}</td>
+            <td class="verticalText">{{ head4.lu}}</td>
+            <td class="verticalText">{{ head4.lv}}</td>
+            <td class="verticalText">{{ head4.lw}}</td>
+            <td class="verticalText">{{ head4.lx}}</td>
+            <td class="verticalText">{{ head4.ly}}</td>
+          
+            <td>
+              <i [routerLink]="['/editar-head4', head4._id]"  class="fa-solid fa-pen-to-square"></i>
+                <i (click)="eliminarHeads4(head4._id)" class="fa-solid fa-trash text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+  
+        <tbody>
+          <tr *ngFor="let four of listFour">
+           
+          
+            <td class="segundo">{{ four.EDM4}}</td>
+              <td class="segundo">{{ four.da}}</td>
+              <td class="segundo">{{ four.db}}</td>
+              <td class="segundo">{{ four.dc}}</td>
+              <td class="segundo">{{ four.dd}}</td>
+              <td class="segundo">{{ four.de}}</td>
+              <td class="segundo">{{ four.df}}</td>
+              <td class="segundo">{{ four.dg}}</td>
+              <td class="segundo">{{ four.dh}}</td>
+              <td class="segundo">{{ four.di}}</td>
+              <td class="segundo">{{ four.dj}}</td>
+              <td class="segundo">{{ four.dk}}</td>
+              <td class="segundo">{{ four.dl}}</td>
+              <td class="segundo">{{ four.dm}}</td>
+              <td class="segundo">{{ four.dn}}</td>
+              <td class="segundo">{{ four.dnn}}</td>
+              <td class="segundo">{{ four.so}}</td>
+              <td class="segundo">{{ four.dp}}</td>
+              <td class="segundo">{{ four.dq}}</td>
+              <td class="segundo">{{ four.dr}}</td>
+              <td class="segundo">{{ four.ds}}</td>
+              <td class="segundo">{{ four.dt}}</td>
+              <td class="segundo">{{ four.du}}</td>
+              <td class="segundo">{{ four.dv}}</td>
+              <td class="segundo">{{ four.dw}}</td>
+              <td class="segundo">{{ four.dx}}</td>
+              <td class="segundo">{{ four.dy}}</td>
+              <td>
+                <i [routerLink]="['/editar-four',four._id]"  class="fa-solid fa-pen-to-square"></i>
+                <i (click)="eliminarFour(four._id)" class="fa-solid fa-trash text-danger"></i>
+            </td>
+          </tr>
+        </tbody>
+   
+      </table>
+      <h5 *ngIf="listFour.length == 0" >No hay Matriz para mostrar</h5>
+  </div>
+  <br>
+  <br>
+  <button routerLink="/crear-four" class="btn btn-success">Nueva Casilla</button>
+  
+  <br>
+  <br>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="edm03tabla1">EDM02</a></li>
+      <li class="page-item"><a class="page-link" href="edm0atabla1">1</a></li>
+      <li class="page-item"><a class="page-link" href="listar-four">2</a></li>
+      <li class="page-item"><a class="page-link" href="edm04tabla3">3</a></li>
+      <li class="page-item"><a class="page-link" href="edm04tabla4">4</a></li>
+      <li class="page-item"><a class="page-link" href="edm04tabla5">5</a></li>
+      <li class="page-item"><a class="page-link" href="edm04tabla3">Next</a></li>
+      
+    </ul>
+  </nav><br>
+

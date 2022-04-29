@@ -1,0 +1,400 @@
+<div>
+    <span class="titulo" class="d-grid gap-2 col-2  mx-auto " style="color: white; text-align: center;" >{{title}}</span>
+    <form class="container bg-light bc row row-cols-4 row-cols-lg-4 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 0 auto;"
+     [formGroup]="tablaunoForm" (ngSubmit)="agregarTablauno()" >
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group">
+            <select type="text" formControlName="BAI" class="form-control" placeholder="BAI">
+               <option>BAI01.01.<br> Mantener un enfoque estandar <br>para la gestion de programas y <br>proyectos.</option>
+               <option>BAI01.02.<br> Iniciar un programa.</option>
+               <option>BAI01.03.<br> Gestionar el compromiso de las <br>partes interesadas.</option>
+               <option>BAI01.04.<br> Desarrollar y mantener el plan <br>de programa.</option>
+               <option>BAI01.05.<br> Lanzar y ejecutar el programa.</option>
+               <option>BAI01.06.<br> Supervisar, controlar e informar <br>de los resultados del programa. </option>
+               <option>BAI01.07.<br> Lanzar e iniciar proyectos <br>dentro de un programa. </option>
+               <option>BAI01.08.<br> Planificar proyectos.</option>
+               <option>BAI01.09.<br> Gestionar la calidad de los <br> programas y proyectos.</option>
+               <option>BAI01.10.<br> Gestionar el riesgo de los <br> programas y proyectos.</option>
+               <option>BAI01.11.<br> Supervisar y controlar <br>proyectos.</option>
+               <option>BAI01.12.<br> Gestionar los recursos y <br>los paquetes de trabajo del <br>
+                proyecto.</option>
+               <option>BAI01.13.<br> Cerrar un proyecto o interacion.</option>
+               <option>BAI01.14.<br> Cerrar un programa.</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('BAI')?.hasError('required') && tablaunoForm.get('BAI')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="na" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('na')?.hasError('required') && tablaunoForm.get('na')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Financiero(CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nb" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nb')?.hasError('required') && tablaunoForm.get('nb')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Financiero(CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nc" class="form-control">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nc')?.hasError('required') && tablaunoForm.get('nc')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Operaciones(COO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nd" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nd')?.hasError('required') && tablaunoForm.get('nd')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Ejecutivos de negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="ne" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('ne')?.hasError('required') && tablaunoForm.get('ne')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los procesos de negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="nf" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nf')?.hasError('required') && tablaunoForm.get('nf')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité Ejecutivo Estratégico</p>
+        <div class="form-group">
+            <select type="text" formControlName="ng" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('ng')?.hasError('required') && tablaunoForm.get('ng')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité Estratégico (Desarrollo/Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nh" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nh')?.hasError('required') && tablaunoForm.get('nh')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestión de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="ni" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('ni')?.hasError('required') && tablaunoForm.get('ni')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestión del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="nj" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nj')?.hasError('required') && tablaunoForm.get('nj')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nk" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nk')?.hasError('required') && tablaunoForm.get('nk')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de la Información (CISO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nl" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nl')?.hasError('required') && tablaunoForm.get('nl')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="nm" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nm')?.hasError('required') && tablaunoForm.get('nm')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Comité de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="nn" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nn')?.hasError('required') && tablaunoForm.get('nn')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="no" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('no')?.hasError('required') && tablaunoForm.get('no')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo (Compliance)</p>
+        <div class="form-group">
+            <select type="text" formControlName="np" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('np')?.hasError('required') && tablaunoForm.get('np')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="nq" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nq')?.hasError('required') && tablaunoForm.get('nq')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informática/Sistemas (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nr" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nr')?.hasError('required') && tablaunoForm.get('nr')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura del Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="ns" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('ns')?.hasError('required') && tablaunoForm.get('ns')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Desarrollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="nt" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nt')?.hasError('required') && tablaunoForm.get('nt')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="nu" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nu')?.hasError('required') && tablaunoForm.get('nu')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administración TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="nv" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nv')?.hasError('required') && tablaunoForm.get('nv')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Servicio (Service Manager)</p>
+        <div class="form-group">
+            <select type="text" formControlName="nw" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nw')?.hasError('required') && tablaunoForm.get('nw')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Información</p>
+        <div class="form-group">
+            <select type="text" formControlName="nx" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nx')?.hasError('required') && tablaunoForm.get('nx')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad del Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="ny" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('ny')?.hasError('required') && tablaunoForm.get('ny')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Privacidad de la Información</p>
+        <div class="form-group">
+            <select type="text" formControlName="nz" class="form-control">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="tablaunoForm.get('nz')?.hasError('required') && tablaunoForm.get('nz')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <div class="ji">
+            <button routerLink="/listar-tablauno" class="btn btn-danger">Volver</button>
+            <button type="submit" class="btn btn-success" [disabled]="tablaunoForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>

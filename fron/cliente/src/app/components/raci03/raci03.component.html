@@ -1,0 +1,394 @@
+
+    <span class="d-grid gap-2 col-4  mx-auto ">{{titulo}}</span><br><br>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-4 g-1 g-lg-2" style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;"
+    [formGroup]="raci03Form" (ngSubmit)="agregarRaci03()" >
+        <p class="li">Practica clave de gobierno</p><br><br>
+        <div class="form-group" >
+            <select type="text" formControlName="dss" class="form-control" placeholder="DSS01">
+                <option><a href="">DSS03.01.</a> <br>Identificar y calsificar problemas.</option>
+               <option>DSS03.02.<br> Investigar y diagnosticar problemas.</option>
+               <option>DSS03.03.<br> Levantar errores conocidos.</option>
+               <option>DSS03.04.<br> Resolver y cerrar problemas.</option>
+               <option>DSS03.05.<br> Realizar una gestion de problemas proactiva.</option>
+   
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss')?.hasError('required') && raci03Form.get('dss')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss1" class="form-control" placeholder="dss1">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss1')?.hasError('required') && raci03Form.get('dss1')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss2" class="form-control" placeholder="dss2">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss2')?.hasError('required') && raci03Form.get('dss2')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Directo General Financiero (CFO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss3" class="form-control" placeholder="dss3">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss3')?.hasError('required') && raci03Form.get('dss3')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Operaciones (COO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss4" class="form-control" placeholder="dss4">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss4')?.hasError('required') && raci03Form.get('dss4')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">Ejecutivo de Negocios</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss5" class="form-control" placeholder="dss5">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss5')?.hasError('required') && raci03Form.get('dss5')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los Procesos de Negocio</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss6" class="form-control" placeholder="dss6">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss6')?.hasError('required') && raci03Form.get('dss6')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario">Comité Ejecutivo Estratégico</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss7" class="form-control" placeholder="dss7">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss7')?.hasError('required') && raci03Form.get('dss7')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p id="formulario">Comité Ejecutivo y Estrategico (Desarrollo de Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss8" class="form-control" placeholder="dss8">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss8')?.hasError('required') && raci03Form.get('dss8')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario">Oficina de Gestion de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss9" class="form-control" placeholder="dss9">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss9')?.hasError('required') && raci03Form.get('dss9')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p id="formulario">Oficina de Gestion del Valor</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss10" class="form-control" placeholder="dss10">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss10')?.hasError('required') && raci03Form.get('dss10')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Director de Riesgos (CRO)</p><br>
+        <div class="form-group">
+            <select type="text" formControlName="dss11" class="form-control" placeholder="dss11">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss11')?.hasError('required') && raci03Form.get('dss11')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de Informacion (CSO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss12" class="form-control" placeholder="dss12">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss12')?.hasError('required') && raci03Form.get('dss12')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss13" class="form-control" placeholder="dss13">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss13')?.hasError('required') && raci03Form.get('dss13')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss14" class="form-control" placeholder="dss14">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss14')?.hasError('required') && raci03Form.get('dss14')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss15" class="form-control" placeholder="dss15">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss15')?.hasError('required') && raci03Form.get('dss15')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo(Complice)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss16" class="form-control" placeholder="dss16">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss16')?.hasError('required') && raci03Form.get('dss16')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss17" class="form-control" placeholder="dss17">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss17')?.hasError('required') && raci03Form.get('dss17')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li"> Informatica Sistema (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss18" class="form-control" placeholder="dss18">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss18')?.hasError('required') && raci03Form.get('dss18')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss19" class="form-control" placeholder="dss19">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss19')?.hasError('required') && raci03Form.get('dss19')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Jefe de Desarollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss20" class="form-control" placeholder="dss20">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss20')?.hasError('required') && raci03Form.get('dss20')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss21" class="form-control" placeholder="dss21">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss21')?.hasError('required') && raci03Form.get('dss21')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administracion TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss22" class="form-control" placeholder="dss22">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss22')?.hasError('required') && raci03Form.get('dss22')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Gestiontor de Servicio (Service Manager)</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss23" class="form-control" placeholder="dss23">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss23')?.hasError('required') && raci03Form.get('dss23')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss24" class="form-control" placeholder="dss24">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss24')?.hasError('required') && raci03Form.get('dss24')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss25" class="form-control" placeholder="dss25">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+               
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss25')?.hasError('required') && raci03Form.get('dss25')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">Gestor de Privacidad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="dss26" class="form-control" placeholder="dss26">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="raci03Form.get('dss26')?.hasError('required') && raci03Form.get('dss26')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/listraci03" class="btn btn-secondary">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-warning"  [disabled]="raci03Form.invalid">Aceptar</button>
+        </div>
+    </form><br>
+  
+
+
+

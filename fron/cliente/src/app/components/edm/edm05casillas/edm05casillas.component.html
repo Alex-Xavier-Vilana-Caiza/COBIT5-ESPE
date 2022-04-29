@@ -1,0 +1,389 @@
+<div>
+    <span class="d-grid gap-2 col-4  mx-auto ">{{titulo}}</span><br><br>
+    <form class="container bg-light bc row row-cols-1 row-cols-lg-5 g-1 g-lg-2"
+    style="height: 10px;" style="width: 60%;" style="margin: 35px   190px;"
+    [formGroup]="edm05casillaForm" (ngSubmit)="agregarEdm05casilla()" >
+        <p class="li">Practica clave de gobierno</p>
+        <div class="form-group" >
+            <select type="text" formControlName="edm05casilla1" class="form-control" placeholder="edm05casilla1">
+                <option>EDM05.01<br>Evaluar los requisitos de elaboración de informes de las partes interesadas.</option>
+               <option>EDM05.02<br> Orientar la comunicación con las partes interesadas y la elaboración de informes. </option>
+               <option>EDM05.03<br>Supervisar la comunicación con las partes interesadas.</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla1')?.hasError('required') && edm05casillaForm.get('edm05casilla1')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Administracion</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla2" class="form-control" placeholder="edm05casilla2">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla2')?.hasError('required') && edm05casillaForm.get('edm05casilla2')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director General Ejecutivo (CEO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla3" class="form-control" placeholder="edm05casilla3">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla3')?.hasError('required') && edm05casillaForm.get('edm05casilla3')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Directo General Financiero (CFO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla4" class="form-control" placeholder="edm05casilla4">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla4')?.hasError('required') && edm05casillaForm.get('edm05casilla4')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director Operacio (COO)nes</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla5" class="form-control" placeholder="edm05casilla5">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla5')?.hasError('required') && edm05casillaForm.get('edm05casilla5')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+            </div>
+            <p class="li">Ejecutivo de Negocios</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla6" class="form-control" placeholder="edm05casilla6">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla6')?.hasError('required') && edm05casillaForm.get('edm05casilla6')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Propietarios de los Procos de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla7" class="form-control" placeholder="edm05casilla7">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla7')?.hasError('required') && edm05casillaForm.get('edm05casilla7')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">comite Ejecutivo Estrategico</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla8" class="form-control" placeholder="edm05casilla8">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla8')?.hasError('required') && edm05casillaForm.get('edm05casilla8')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite Estrategico(Desarollo Proyectos)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla9" class="form-control" placeholder="edm05casilla9">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla9')?.hasError('required') && edm05casillaForm.get('edm05casilla9')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion de Proyectos</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla10" class="form-control" placeholder="edm05casilla10">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla10')?.hasError('required') && edm05casillaForm.get('edm05casilla10')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Oficina de Gestion del Valor</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla11" class="form-control" placeholder="edm05casilla11">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla11')?.hasError('required') && edm05casillaForm.get('edm05casilla11')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Director de Riesgos (CRO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla12" class="form-control" placeholder="edm05casilla12">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla12')?.hasError('required') && edm05casillaForm.get('edm05casilla12')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Seguridad de Informacion (CSO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla13" class="form-control" placeholder="edm05casilla13">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla13')?.hasError('required') && edm05casillaForm.get('edm05casilla13')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Consejo de Arquitectura de la Empresa</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla14" class="form-control" placeholder="edm05casilla14">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla14')?.hasError('required') && edm05casillaForm.get('edm05casilla14')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Comite de Riesgos Corporativos</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla15" class="form-control" placeholder="edm05casilla15">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla15')?.hasError('required') && edm05casillaForm.get('edm05casilla15')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Recursos Humanos</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla16" class="form-control" placeholder="edm05casilla16">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla16')?.hasError('required') && edm05casillaForm.get('edm05casilla16')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Cumplimiento Normativo(Complice)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla17" class="form-control" placeholder="edm05casilla17">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla17')?.hasError('required') && edm05casillaForm.get('edm05casilla17')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Auditoria</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla18" class="form-control" placeholder="edm05casilla18">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla18')?.hasError('required') && edm05casillaForm.get('edm05casilla18')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Director de Informatica Sistema (CIO)</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla19" class="form-control" placeholder="edm05casilla19">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla19')?.hasError('required') && edm05casillaForm.get('edm05casilla19')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Arquitectura de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla20" class="form-control" placeholder="edm05casilla20">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla20')?.hasError('required') && edm05casillaForm.get('edm05casilla20')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Jefe de Desarollo</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla21" class="form-control" placeholder="edm05casilla21">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla21')?.hasError('required') && edm05casillaForm.get('edm05casilla21')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Operaciones TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla22" class="form-control" placeholder="edm05casilla22">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla22')?.hasError('required') && edm05casillaForm.get('edm05casilla22')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Jefe de Administracion TI</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla23" class="form-control" placeholder="edm05casilla23">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla23')?.hasError('required') && edm05casillaForm.get('edm05casilla23')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+            <p class="li">Gestor de Servicio</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla24" class="form-control" placeholder="edm05casilla24">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla24')?.hasError('required') && edm05casillaForm.get('edm05casilla24')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Seguridad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla25" class="form-control" placeholder="edm05casilla25">
+               <option >R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla25')?.hasError('required') && edm05casillaForm.get('edm05casilla25')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div> 
+        </div>
+        <p class="li">Gestor de Continuidad de Negocio</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla26" class="form-control" placeholder="edm05casilla26">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla26')?.hasError('required') && edm05casillaForm.get('edm05casilla26')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div>
+        <p class="li">Gestor de Privacidad de la Informacion</p>
+        <div class="form-group">
+            <select type="text" formControlName="edm05casilla27" class="form-control" placeholder="edm05casilla27">
+               <option>R</option>
+               <option>A</option>
+               <option>C</option>
+               <option>I</option>
+               <option>-</option>
+            </select>
+            <div class="validacion"
+            *ngIf="edm05casillaForm.get('edm05casilla27')?.hasError('required') && edm05casillaForm.get('edm05casilla27')?.touched">
+            <span>Este campo<b> es obligatorio</b></span>
+            </div>
+        </div><br>
+        <div>
+            <button routerLink="/listar-four" class="btn btn-danger">Volver</button>  &nbsp;
+            <button type="submit" class="btn btn-success" [disabled]="edm05casillaForm.invalid">Aceptar</button>
+        </div>
+    </form>
+</div>
+

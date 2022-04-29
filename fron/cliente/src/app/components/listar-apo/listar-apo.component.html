@@ -1,0 +1,119 @@
+<div  class="table-responsive">
+    <table *ngIf="listApo.length > 0" class="table  table-hover  " >
+        <thead   >
+          <tr id="head_10">
+            <th colspan="29" class="matriz">APOO1</th>
+          </tr>
+        </thead>
+  
+        <!-- -----------------------cabecera------------------------ -->
+  
+        <tbody >
+         
+          <tr *ngFor="let apo of listApo" class="segundoo">
+            <th><b>AP001</b><br> Establecer un enfoque de la supervision.</th>
+            <td class="verticaHorizontalt">Práctica Clave de Gobierno</td>
+            <td class="verticalText">{{ apo.wa}}</td>
+            <td class="verticalText">{{ apo.wb}}</td>
+            <td class="verticalText">{{ apo.wc}}</td>
+            <td class="verticalText">{{ apo.wd}}</td>
+            <td class="verticalText">{{ apo.we}}</td>
+            <td class="verticalText">{{ apo.wf}}</td>
+            <td class="verticalText">{{ apo.wg}}</td>
+            <td class="verticalText">{{ apo.wh}}</td>
+            <td class="verticalText">{{ apo.wi}}</td>
+            <td class="verticalText">{{ apo.wj}}</td>
+            <td class="verticalText">{{ apo.wk}}</td>
+            <td class="verticalText">{{ apo.wl}}</td>
+            <td class="verticalText">{{ apo.wm}}</td>
+            <td class="verticalText">{{ apo.wn}}</td>
+            <td class="verticalText">{{ apo.wnn}}</td>
+            <td class="verticalText">{{ apo.wo}}</td>
+            <td class="verticalText">{{ apo.wp}}</td>
+            <td class="verticalText">{{ apo.wq}}</td>
+            <td class="verticalText">{{ apo.wr}}</td>
+            <td class="verticalText">{{ apo.ws}}</td>
+            <td class="verticalText">{{ apo.wt}}</td>
+            <td class="verticalText">{{ apo.wu}}</td>
+            <td class="verticalText">{{ apo.wv}}</td>
+            <td class="verticalText">{{ apo.ww}}</td>
+            <td class="verticalText">{{ apo.wx}}</td>
+            <td class="verticalText">{{ apo.wy}}</td>
+          
+            <td>
+              <i [routerLink]="['/editar-apo', apo._id]"  class="fa-solid fa-pen-to-square  ed" ></i>
+              <i (click)="eliminarApo(apo._id)" class="fa-solid fa-trash  el"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+  
+        <tbody>
+          <tr *ngFor="let apot of listApot" class="segundoo">
+           
+          
+            <td class="segundo">{{ apot.APO1}}</td>
+              <td class="segundo">{{ apot.ua}}</td>
+              <td class="segundo">{{ apot.ub}}</td>
+              <td class="segundo">{{ apot.uc}}</td>
+              <td class="segundo">{{ apot.ud}}</td>
+              <td class="segundo">{{ apot.ue}}</td>
+              <td class="segundo">{{ apot.uf}}</td>
+              <td class="segundo">{{ apot.ug}}</td>
+              <td class="segundo">{{ apot.uh}}</td>
+              <td class="segundo">{{ apot.ui}}</td>
+              <td class="segundo">{{ apot.uj}}</td>
+              <td class="segundo">{{ apot.uk}}</td>
+              <td class="segundo">{{ apot.ul}}</td>
+              <td class="segundo">{{ apot.um}}</td>
+              <td class="segundo">{{ apot.un}}</td>
+              <td class="segundo">{{ apot.unn}}</td>
+              <td class="segundo">{{ apot.uo}}</td>
+              <td class="segundo">{{ apot.up}}</td>
+              <td class="segundo">{{ apot.uq}}</td>
+              <td class="segundo">{{ apot.ur}}</td>
+              <td class="segundo">{{ apot.us}}</td>
+              <td class="segundo">{{ apot.ut}}</td>
+              <td class="segundo">{{ apot.uu}}</td>
+              <td class="segundo">{{ apot.uv}}</td>
+              <td class="segundo">{{ apot.uw}}</td>
+              <td class="segundo">{{ apot.ux}}</td>
+              <td class="segundo">{{ apot.uy}}</td>
+              <td class="segundo">{{ apot.uy}}</td>
+              <td>
+                <i [routerLink]="['/editar-apot', apot._id]"   class="fa-solid fa-pen-to-square  ed"></i>
+                <i (click)="eliminarApots(apot._id)" class="fa-solid fa-trash  el"></i>
+            </td>
+          </tr>
+        </tbody>
+  
+      </table>
+      <h5 *ngIf="listApo.length == 0" >No hay Matriz para mostrar</h5>
+  </div>
+  <br>
+  <br>
+  
+
+  <div class="d-grid gap-2 col-3 mx-auto">
+    <!-- -------<button routerLink="/crear-apo01" class="btn btn-primary">Nuevo raci</button>------- -->
+  
+  <button routerLink="/crear-apot" class="btn btn-primary">Nueva tabla</button>
+    
+  </div><br>
+  
+  <br>
+  <br>
+  <nav aria-label="Page navigation example " class="container" style="width: 87%;">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" routerLink="/home">APOO1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina51">1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/listar-apo">2</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina53">3</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina54">4</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina55">5</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/pagina56">6</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      
+    </ul>
+  </nav><br>
+    
